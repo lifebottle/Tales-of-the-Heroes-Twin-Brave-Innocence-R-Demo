@@ -31,6 +31,7 @@ class BdiFile:
     is_file: bool  # Marks either NBI (False) or everything else (True)
     rel_path: Path
     is_compressed: bool = False
+    gzip_ts: int = 0
     is_arc: bool = False
 
 
@@ -100,6 +101,8 @@ class BdiReader:
             file_path = Path(self.name_map.get(file_hash, f"_no_name/${file_hash:08X}"))
             file = BdiFile(file_hash, file_off, file_size, flag, file_path)
             file.is_compressed = self._is_gz_file(file)
+            if file.is_compressed:
+                file.gzip_ts = self._get_gz_timestamp(file)
             file.is_arc = self._is_arc_file(file)
             self.files.append(file)
     
@@ -107,6 +110,11 @@ class BdiReader:
         assert self._mm is not None
         start = p.offset
         return self._mm[start : start + 2] == GZIP_MAGIC
+    
+    def _get_gz_timestamp(self, p: BdiFile) -> int:
+        assert self._mm is not None
+        start = p.offset
+        return struct.unpack("<I", self._mm[start + 4 : start + 8])[0]
     
     def _is_arc_file(self, p: BdiFile) -> bool:
         assert self._mm is not None
@@ -187,7 +195,7 @@ def repack_bdi(
                 out = b"\x1f\x8b"              # magic
                 out += b"\x08"                  # deflate
                 out += b"\x08"                  # filename
-                out += b"\x00\x00\x00\x00"      # timestamp
+                out += struct.pack("<I", file.gzip_ts) # timestamp
                 out += b"\x00"                  # level 0
                 out += b"\x03"                  # UNIX
                 out += file.rel_path.name.encode() + b"\x00"
@@ -221,9 +229,12 @@ def repack_bdi(
         # 1. Build index table (using lower N bits of CRC32)
         index_table = [0x0000] * (1 << crc_bits)
         
-        for i, entry in enumerate(file_entries):
+        for i, entry in enumerate(file_entries[:-1]):
             crc_index = entry['hash'] & ((1 << crc_bits) - 1)
-            index_table[crc_index] = i + 2  # +2 because entry 0 is dummy
+            j = 0
+            while index_table[crc_index + j] != 0:
+                j += 1
+            index_table[crc_index + j] = i + 2  # +2 because entry 0 is dummy
         
         # Write index table
         for idx in index_table:
@@ -231,7 +242,7 @@ def repack_bdi(
         
         # 2. Write dummy entry (holds file count and timestamp)
         output_data += struct.pack("<I", 0)  # dummy hash
-        output_data += struct.pack("<I", len(files))  # file count
+        output_data += struct.pack("<I", len(files) - 1)  # file count
         output_data += struct.pack("<I", 0)  # dummy hash
         output_data += struct.pack("<I", timestamp)  # timestamp
         
@@ -244,8 +255,9 @@ def repack_bdi(
             
             output_data += struct.pack("<I", entry['hash'])
             output_data += struct.pack("<I", packed_offset)
+
         output_data += b'\x00' * ((2048 - (len(output_data) % 2048)) % 2048)
-        
+
         # 4. Write file data with padding
         for entry in file_entries:
             output_data += entry['data']
