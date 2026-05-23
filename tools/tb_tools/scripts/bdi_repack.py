@@ -184,7 +184,15 @@ def repack_bdi(
             
             # Apply compression if original was compressed
             if file.is_compressed:
-                data = gzip.compress(data, compresslevel=9)
+                out = b"\x1f\x8b"              # magic
+                out += b"\x08"                  # deflate
+                out += b"\x08"                  # filename
+                out += b"\x00\x00\x00\x00"      # timestamp
+                out += b"\x00"                  # level 0
+                out += b"\x03"                  # UNIX
+                out += file.rel_path.name.encode() + b"\x00"
+                out += crunch64.gzip.compress(data, level=6)
+                data = out
             
             file_data_list.append(data)
         
