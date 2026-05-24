@@ -305,7 +305,7 @@ class Ppt:
         gpu_width = _next_pow2(img_width)
         gpu_height = _next_pow2(img_height)
 
-        tex_width = (img_width + 0x15) & ~0x15
+        tex_width = (img_width + 0xF) & ~0xF
         tex_height = (img_height + 0x7) & ~0x7
 
         self.img_size = Size(img_width, img_height)
