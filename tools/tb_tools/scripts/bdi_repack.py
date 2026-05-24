@@ -211,7 +211,7 @@ def repack_bdi(
         for i, (file, data) in enumerate(zip(files, file_data_list)):
             # Align to 2048-byte boundary
             alignment = 2048
-            padding = (alignment - ((current_offset + file.size) % alignment)) % alignment
+            padding = (alignment - ((current_offset + len(data)) % alignment)) % alignment
             
             # Store entry info
             file_entries.append({
