@@ -99,7 +99,7 @@ class Arc:
             arc.write_padding(self.alignment)
             for file in self.files:
                 repl_path = folder / file.name
-               
+
                 if repl_path.suffix == ".ppt":
                     repl_path = repl_path.with_suffix(".png")
 
@@ -120,7 +120,7 @@ class Arc:
                     ppt.update(repl_path)
                     data = ppt.get_bytes()
                 else:
-                    data = file.data
+                    data = repl_path.read_bytes()
 
                 if file.is_compressed:
                     # TODO: Factor this out
