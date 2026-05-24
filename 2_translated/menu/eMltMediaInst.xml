@@ -8,7 +8,7 @@
       <EnglishText/>
       <Notes/>
       <Id>1</Id>
-      <Status>To Do</Status>
+      <Status>Done</Status>
     </Entry>
     <Entry>
       <PointerOffset>196</PointerOffset>
@@ -17,7 +17,7 @@
       <EnglishText/>
       <Notes/>
       <Id>2</Id>
-      <Status>To Do</Status>
+      <Status>Done</Status>
     </Entry>
     <Entry>
       <PointerOffset>283</PointerOffset>
@@ -25,7 +25,7 @@
       <EnglishText/>
       <Notes/>
       <Id>3</Id>
-      <Status>To Do</Status>
+      <Status>Done</Status>
     </Entry>
     <Entry>
       <PointerOffset>311</PointerOffset>
@@ -34,7 +34,7 @@ xxxMB以上の空き容量がある記録メディアが必要です</JapaneseTe
       <EnglishText/>
       <Notes/>
       <Id>4</Id>
-      <Status>To Do</Status>
+      <Status>Done</Status>
     </Entry>
     <Entry>
       <PointerOffset>409</PointerOffset>
@@ -42,7 +42,7 @@ xxxMB以上の空き容量がある記録メディアが必要です</JapaneseTe
       <EnglishText/>
       <Notes/>
       <Id>5</Id>
-      <Status>To Do</Status>
+      <Status>Done</Status>
     </Entry>
     <Entry>
       <PointerOffset>423</PointerOffset>
@@ -50,7 +50,7 @@ xxxMB以上の空き容量がある記録メディアが必要です</JapaneseTe
       <EnglishText/>
       <Notes/>
       <Id>6</Id>
-      <Status>To Do</Status>
+      <Status>Done</Status>
     </Entry>
     <Entry>
       <PointerOffset>471</PointerOffset>
@@ -58,7 +58,7 @@ xxxMB以上の空き容量がある記録メディアが必要です</JapaneseTe
       <EnglishText/>
       <Notes/>
       <Id>7</Id>
-      <Status>To Do</Status>
+      <Status>Done</Status>
     </Entry>
     <Entry>
       <PointerOffset>491</PointerOffset>
@@ -66,7 +66,7 @@ xxxMB以上の空き容量がある記録メディアが必要です</JapaneseTe
       <EnglishText/>
       <Notes/>
       <Id>8</Id>
-      <Status>To Do</Status>
+      <Status>Done</Status>
     </Entry>
   </Strings>
 </MenuText>

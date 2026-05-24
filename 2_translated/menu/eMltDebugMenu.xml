@@ -9,7 +9,7 @@ mlt_editor.xlsによってバイナリ化したテキストを使いましょう
       <EnglishText/>
       <Notes/>
       <Id>1</Id>
-      <Status>To Do</Status>
+      <Status>Done</Status>
     </Entry>
   </Strings>
   <Strings>
@@ -20,7 +20,7 @@ mlt_editor.xlsによってバイナリ化したテキストを使いましょう
       <EnglishText/>
       <Notes/>
       <Id>2</Id>
-      <Status>To Do</Status>
+      <Status>Done</Status>
     </Entry>
     <Entry>
       <PointerOffset>210</PointerOffset>
@@ -28,7 +28,7 @@ mlt_editor.xlsによってバイナリ化したテキストを使いましょう
       <EnglishText/>
       <Notes/>
       <Id>3</Id>
-      <Status>To Do</Status>
+      <Status>Done</Status>
     </Entry>
     <Entry>
       <PointerOffset>222</PointerOffset>
@@ -36,7 +36,7 @@ mlt_editor.xlsによってバイナリ化したテキストを使いましょう
       <EnglishText/>
       <Notes/>
       <Id>4</Id>
-      <Status>To Do</Status>
+      <Status>Done</Status>
     </Entry>
     <Entry>
       <PointerOffset>234</PointerOffset>
@@ -44,7 +44,7 @@ mlt_editor.xlsによってバイナリ化したテキストを使いましょう
       <EnglishText/>
       <Notes/>
       <Id>5</Id>
-      <Status>To Do</Status>
+      <Status>Done</Status>
     </Entry>
     <Entry>
       <PointerOffset>242</PointerOffset>
@@ -52,7 +52,7 @@ mlt_editor.xlsによってバイナリ化したテキストを使いましょう
       <EnglishText/>
       <Notes/>
       <Id>6</Id>
-      <Status>To Do</Status>
+      <Status>Done</Status>
     </Entry>
     <Entry>
       <PointerOffset>254</PointerOffset>
@@ -60,7 +60,7 @@ mlt_editor.xlsによってバイナリ化したテキストを使いましょう
       <EnglishText/>
       <Notes/>
       <Id>7</Id>
-      <Status>To Do</Status>
+      <Status>Done</Status>
     </Entry>
   </Strings>
   <Strings>
