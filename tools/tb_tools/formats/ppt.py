@@ -269,9 +269,9 @@ class Ppt:
             b5 = b >> 3
             a1 = 1 if a >= 128 else 0
 
-            val = (a1 << 11) | (b5 << 6) | (g5 << 1) | r5
+            val = (a1 << 15) | (b5 << 10) | (g5 << 5) | (r5 << 0)
 
-            out[j] = val & 0xFF
+            out[j + 0] = val & 0xFF
             out[j + 1] = val >> 8
             j += 2
 
