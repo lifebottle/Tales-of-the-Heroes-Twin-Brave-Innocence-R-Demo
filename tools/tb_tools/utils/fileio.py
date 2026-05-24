@@ -196,9 +196,11 @@ class FileIO:
         st = struct.Struct(fmt)
         self.write(st.pack(*values), pos)
 
-    def write_padding(self, alignment, pad_byte=b"\x00"):
+    def write_padding(self, alignment, pad_byte=b"\x00") -> int:
         pos = self.tell()
         pad = (-pos) % alignment
 
         if pad:
             self.write(pad_byte * pad)
+
+        return pad

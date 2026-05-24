@@ -2,8 +2,14 @@ from dataclasses import dataclass
 from enum import IntEnum
 from pathlib import Path
 
-from PIL import Image
+import imagequant
+from PIL import Image, ImageOps
 from tb_tools.utils.fileio import FileIO
+
+
+def _next_pow2(v):
+    return 1 if v <= 1 else 1 << (v - 1).bit_length()
+
 
 PPT_MAGIC = b"ppt\x00"
 PPC_MAGIC = b"ppc\x00"
@@ -27,10 +33,11 @@ class Size:
 
 
 class Ppt:
-    def __init__(self, path: Path, detile: bool = True) -> None:
+    def __init__(self, path: Path | bytes, detile: bool = True) -> None:
         self.tex_psm: PSM = PSM.RGBA_8888
         self.pal_psm: PSM = PSM.RGBA_8888
-        self.count: int = 0
+        self.texbuf_mode: int = 0
+        self.pal_cnt: int = 0
         self.gpu_size: Size = Size(0, 0)
         self.tex_size: Size = Size(0, 0)
         self.img_size: Size = Size(0, 0)
@@ -41,23 +48,25 @@ class Ppt:
             assert f.read(4) == PPT_MAGIC, "Wrong MAGIC for PPT file!"
             self.gpu_size = Size(f.read_uint16(), f.read_uint16())
             self.tex_psm = PSM(f.read_uint16())
-            self.count = f.read_uint16()
+            self.texbuf_mode = f.read_uint16()
             self.tex_size = Size(f.read_uint16(), f.read_uint16())
             self.img_size = Size(f.read_uint16(), f.read_uint16())
-            reserved0 = f.read_uint32()
+            self.reserved0 = f.read_uint32()
             self.pal_ptr = f.read_uint32()
-            reserved1 = f.read_uint32()
+            self.reserved1 = f.read_uint32()
+            self._reserved0 = 0
+            self._reserved1 = 0
 
-            assert self.count == 1, "Multi-raster PPT not supported!"
-            assert reserved0 == 0 and reserved1 == 0, "PPT reserved fields are not 0!"
+            # if reserved0 != 0 or reserved1 != 0:
+            #     print(f"PPT reserved fields are not 0! {reserved0} | {reserved1}")
 
             self._read_raster(f)
             self._read_palette(f)
 
             if detile:
-                self._detile()
+                self._tiler(True)
 
-    def _detile(self) -> None:
+    def _tiler(self, decode: bool) -> None:
         tile_w = 16
         tile_h = 8
 
@@ -93,7 +102,10 @@ class Ppt:
                     y = y0 + row
                     dst = y * bytes_per_row + (x0 * 16) // tile_w
 
-                    output[dst : dst + 16] = self.raster[offset : offset + 16]
+                    if decode:
+                        output[dst : dst + 16] = self.raster[offset : offset + 16]
+                    else:
+                        output[offset : offset + 16] = self.raster[dst : dst + 16]
                     offset += 16
 
         self.raster = output
@@ -194,7 +206,165 @@ class Ppt:
 
         # crop to original size
         img = img.crop((0, 0, self.img_size.width, self.img_size.height))
-        img.save(path)
+
+        # Keep this in case we ever want to make BIDs from nothing
+        # img.save(path.with_suffix(f".{self.tex_psm.name}.png"))
+        img.save(path.with_suffix(".png"))
+
+    def _encode_index4(self, img: Image.Image) -> tuple[bytes, bytes]:
+        img = imagequant.quantize_pil_image(
+            img,
+            dithering_level=0.25,
+            max_colors=16,
+            min_quality=0,
+            max_quality=100,
+        )
+
+        raster8 = img.tobytes()
+
+        raster = bytearray(len(raster8) // 2)
+
+        for j, i in enumerate(range(0, len(raster8), 2)):
+            lo = raster8[i] & 0xF
+            hi = raster8[i + 1] & 0xF
+            raster[j] = lo | (hi << 4)
+
+        pal = img.getpalette("RGBA")
+
+        assert pal is not None
+
+        palette = bytes(pal)
+        palette += b"\x00" * ((16 * 4) - (self.pal_cnt * 32))
+
+        return raster, palette
+
+    def _encode_index8(self, img: Image.Image) -> tuple[bytes, bytes]:
+        img = imagequant.quantize_pil_image(
+            img,
+            dithering_level=0.25,
+            max_colors=256,
+            min_quality=0,
+            max_quality=100,
+        )
+
+        raster = img.tobytes()
+        pal = img.getpalette("RGBA")
+
+        assert pal is not None
+
+        palette = bytes(pal)
+        palette += b"\x00" * ((256 * 4) - (self.pal_cnt * 32))
+
+        return raster, palette
+
+    def _encode_rgba5551(self, rgba: bytes) -> bytes:
+        out = bytearray(len(rgba) // 2)
+
+        j = 0
+        for i in range(0, len(rgba), 4):
+            r, g, b, a = rgba[i : i + 4]
+
+            r5 = r >> 3
+            g5 = g >> 3
+            b5 = b >> 3
+            a1 = 1 if a >= 128 else 0
+
+            val = (r5 << 11) | (g5 << 6) | (b5 << 1) | a1
+
+            out[j] = val & 0xFF
+            out[j + 1] = val >> 8
+            j += 2
+
+        return out
+
+    def _encode_rgba4444(self, rgba: bytes) -> bytes:
+        out = bytearray(len(rgba) // 2)
+
+        j = 0
+        for i in range(0, len(rgba), 4):
+            r, g, b, a = rgba[i : i + 4]
+
+            r4 = r >> 4
+            g4 = g >> 4
+            b4 = b >> 4
+            a4 = a >> 4
+
+            val = (a4 << 12) | (b4 << 8) | (g4 << 4) | r4
+
+            out[j] = val & 0xFF
+            out[j + 1] = val >> 8
+            j += 2
+
+        return out
+
+    def update(self, path: Path, reuse_palette: bool = False) -> None:
+        img = Image.open(path).convert("RGBA")
+
+        img_width, img_height = img.size
+
+        gpu_width = _next_pow2(img_width)
+        gpu_height = _next_pow2(img_height)
+
+        tex_width = (img_width + 0x7) & ~0x7
+        tex_height = (img_height + 0x7) & ~0x7
+
+        self.img_size = Size(img_width, img_height)
+        self.tex_size = Size(tex_width, tex_height)
+        self.gpu_size = Size(gpu_width, gpu_height)
+
+        img = ImageOps.expand(
+            img, (0, 0, tex_width - img_width, tex_height - img_height)
+        )
+
+        rgba = img.tobytes()
+
+        if self.tex_psm == PSM.RGBA_5551:
+            self.raster = self._encode_rgba5551(rgba)
+        elif self.tex_psm == PSM.RGBA_4444:
+            self.raster = self._encode_rgba4444(rgba)
+        elif self.tex_psm == PSM.RGBA_8888:
+            self.raster = rgba
+        elif self.tex_psm == PSM.INDEXED_4:
+            self.raster, self.palette = self._encode_index4(img)
+        elif self.tex_psm == PSM.INDEXED_8:
+            self.raster, self.palette = self._encode_index8(img)
+
+    def save_ppt(self, path: Path, tiled: bool = False) -> None:
+        if tiled:
+            self._tiler(False)
+
+        path.write_bytes(self.get_bytes())
+
+    def get_bytes(self) -> bytes:
+        dummy = b""
+        with FileIO(dummy, "wb") as ppt:
+            ppt.write(PPT_MAGIC)
+            ppt.write_uint16(self.gpu_size.width)
+            ppt.write_uint16(self.gpu_size.height)
+            ppt.write_uint16(self.tex_psm)
+            ppt.write_uint16(self.texbuf_mode)
+            ppt.write_uint16(self.tex_size.width)
+            ppt.write_uint16(self.tex_size.height)
+            ppt.write_uint16(self.img_size.width)
+            ppt.write_uint16(self.img_size.height)
+
+            ppt.write_uint32(0)
+            ppt.write_uint32(0)  # Wite pointer at the end
+            ppt.write_uint32(0)
+
+            self._tiler(False)
+            ppt.write(self.raster)
+
+            if self.palette:
+                ppt.write_uint32(ppt.tell(), 0x18)
+                ppt.write(PPC_MAGIC)
+                ppt.write_uint16(self.pal_psm)
+                ppt.write_uint16(self.pal_cnt)
+                ppt.write_uint32(0)
+                ppt.write_uint32(0)
+                ppt.write(self.palette)
+            
+            return bytes(ppt.get_buffer())
 
     def print_info(self) -> None:
         print(f"PSM {self.tex_psm.name}")
@@ -209,19 +379,19 @@ class Ppt:
         assert f.read(4) == PPC_MAGIC, "Wrong MAGIC for PPC chunk!"
 
         pal_psm = f.read_uint16()
-        pal_cnt = f.read_uint16()
-        reserved0 = f.read_uint32()
-        reserved1 = f.read_uint32()
+        self.pal_cnt = f.read_uint16()
+        self._reserved0 = f.read_uint32()
+        self._reserved1 = f.read_uint32()
 
         assert pal_psm == PSM.RGBA_8888, f"Invalid palette Storage Mode {pal_psm}!"
 
-        assert reserved0 == 0 and reserved1 == 0, "PPC reserved fields are not 0!"
+        # assert reserved0 == 0 and reserved1 == 0, "PPC reserved fields are not 0!"
 
         # Read palette data (32 bytes x N colors)
-        self.palette = f.read(pal_cnt * 32)
+        self.palette = f.read(self.pal_cnt * 32)
 
         pal_size = 256 if self.tex_psm == PSM.INDEXED_8 else 16
-        self.palette += b"\x00" * ((pal_size * 4) - (pal_cnt * 32))
+        self.palette += b"\x00" * ((pal_size * 4) - (self.pal_cnt * 32))
 
     def _read_raster(self, f: FileIO) -> None:
         size = self.tex_size.width * self.tex_size.height

@@ -2,13 +2,17 @@ import gzip
 import json
 import mmap
 import struct
+import zlib
 from collections.abc import Iterator
 from dataclasses import dataclass
 from datetime import datetime
 from pathlib import Path
 from typing import BinaryIO
 
-from tb_tools.formats.arc import ARC_MAGIC
+import crunch64
+from tb_tools.formats.arc import ARC_MAGIC, Arc
+from tb_tools.formats.ppt import Ppt
+from tb_tools.utils.fileio import FileIO
 from tqdm.rich import tqdm
 
 GZIP_MAGIC = b"\x1f\x8b"
@@ -24,6 +28,8 @@ class BdiFile:
     rel_path: Path
     is_compressed: bool = False
     is_arc: bool = False
+    replacement: Path | None = None
+    _gzip_ts: int = 0
 
 
 class Bdi:
@@ -105,6 +111,8 @@ class Bdi:
             file = BdiFile(file_hash, file_off, file_size, flag, file_path)
             file.is_compressed = self._is_gz_file(file)
             file.is_arc = self._is_arc_file(file)
+            if file.is_compressed:
+                file._gzip_ts = self._get_gz_timestamp(file)
             self.files.append(file)
             self.file_map[file_hash] = file
 
@@ -112,6 +120,11 @@ class Bdi:
         assert self._mm is not None
         start = p.offset
         return self._mm[start : start + 2] == GZIP_MAGIC
+
+    def _get_gz_timestamp(self, p: BdiFile) -> int:
+        assert self._mm is not None
+        start = p.offset
+        return struct.unpack("<I", self._mm[start + 4 : start + 8])[0]
 
     def _is_arc_file(self, p: BdiFile) -> bool:
         assert self._mm is not None
@@ -125,7 +138,9 @@ class Bdi:
             decoded[j] = b[i] ^ j
         return bytes(decoded) + b[0x80:]
 
-    def _read_blob(self, p: BdiFile) -> tuple[Path, bytes]:
+    def _read_blob(
+        self, p: BdiFile, decompress: bool = True, unscramble: bool = True
+    ) -> tuple[Path, bytes]:
         fp = self._fp
         mm = self._mm
 
@@ -138,17 +153,113 @@ class Bdi:
         b = mm[start:end]
 
         # Handle gzipped files
-        if p.is_compressed:
+        if decompress and p.is_compressed:
             b = gzip.decompress(b)
 
         # Handle scrambled audio
-        if p.rel_path.suffix in (".na", ".at3"):
+        if unscramble and p.rel_path.suffix in (".na", ".at3"):
             b = self._scramble_audio(b)
 
         return p.rel_path, b
 
-    def update_files(self, path: Path):
-        pass
+    def hash_name(self, name: str) -> int:
+        return zlib.crc32(name.encode("ascii"))
+
+    def _get_replacement_data(self, file: BdiFile, folder: Path) -> bytes:
+        repl_path = folder / file.rel_path
+
+        if repl_path.suffix == ".ppt":
+            repl_path = repl_path.with_suffix(".png")
+
+        # Doesn't exist? Pick the original
+        if not repl_path.exists():
+            return self._read_blob(file, False, False)[1]
+
+        # We always read the original ppt, so no need for
+        # name markers
+        if file.rel_path.suffix == ".ppt":
+            ppt = Ppt(self._read_blob(file)[1])
+            ppt.update(repl_path)
+            data = ppt.get_bytes()
+
+        # Arcs can either be provided as an overlay folder
+        # or fully built file
+        elif file.is_arc:
+            print(repl_path)
+            if repl_path.is_dir():
+                arc = Arc(self._read_blob(file)[1])
+                data = arc.overlay(repl_path)
+            else:
+                data = repl_path.read_bytes()
+
+        # Audio needs the header scrambled
+        elif repl_path.suffix in (".na", ".at3"):
+            data = self._scramble_audio(repl_path.read_bytes())
+
+        # Nothing special to do
+        else:
+            data = repl_path.read_bytes()
+
+        if file.is_compressed:
+            # TODO: Factor this out
+            out = b"\x1f\x8b"              # magic
+            out += b"\x08"                  # deflate
+            out += b"\x08"                  # filename
+            out += struct.pack("<I", file._gzip_ts) # timestamp
+            out += b"\x00"                  # level 0
+            out += b"\x03"                  # UNIX
+            out += file.rel_path.name.encode() + b"\x00"
+            out += crunch64.gzip.compress(data, level=6)
+            return out
+
+        return data
+
+    def update_and_save(self, new_bdi: Path, folder: Path):
+        if not self.initialized:
+            raise ValueError("BDI file not initialized yet!")
+
+        if not folder.is_dir():
+            raise ValueError("Path supplied is not a folder!")
+
+        with FileIO(new_bdi, "wb") as nbdi:
+            # Calculate header size
+            index_table_size = (1 << self._crc_bits) * 2  # Index table (shorts)
+            file_count = len(self.files) + 2  # +2 for the dummy entries
+            header_size = index_table_size + (file_count + 2) * 8
+
+            nbdi.write(b"\x00" * header_size)
+            nbdi.write_padding(0x800)
+            last_entry = len(self.files) - 1
+            for i, file in enumerate(self.files):
+                # Write index in table
+                if i != last_entry:
+                    crc_index = file.hash & ((1 << self._crc_bits) - 1)
+                    j = 0
+                    while nbdi.read_uint16((crc_index + j) * 2) != 0:
+                        j += 1
+                      # +2 because entry 0 is dummy
+                    nbdi.write_uint16(i + 2, (crc_index + j) * 2)
+
+                # Write file contents
+                offset = nbdi.tell()
+                data = self._get_replacement_data(file, folder)
+                nbdi.write(data)
+                padding = nbdi.write_padding(0x800)
+                # print(f"0x{offset:08X} 0x{padding:08X}")
+
+                # Write file info in file table
+                packed_offset = offset & 0x7FFFF800
+                packed_offset |= padding & 0x000007FF
+                if file.is_file:
+                    packed_offset |= 0x80000000
+                nbdi.write_uint32(file.hash, (index_table_size + 16) + i * 8)
+                nbdi.write_uint32(packed_offset, (index_table_size + 20) + i * 8)
+
+            # Write dummy entries (holds file count and timestamp)
+            nbdi.write_uint32(0, index_table_size + 0)  # dummy hash
+            nbdi.write_uint32(len(self.files) - 1, index_table_size + 4)
+            nbdi.write_uint32(0, index_table_size + 8)  # dummy hash
+            nbdi.write_uint32(self.timestamp, index_table_size + 12)
 
     def get_file(self, name: str) -> tuple[Path, bytes] | tuple[None, None]:
         if not self.initialized:
