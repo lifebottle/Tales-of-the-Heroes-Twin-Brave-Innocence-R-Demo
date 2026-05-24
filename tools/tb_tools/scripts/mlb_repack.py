@@ -5,15 +5,15 @@ import xml.etree.ElementTree as ET
 SCRIPT_DIR = os.path.dirname(__file__)
 
 ARC_DIR = os.path.normpath(
-    os.path.join(SCRIPT_DIR, "../../1_extracted/all")
+    os.path.join(SCRIPT_DIR, "../../../1_extracted/all")
 )
 
 XML_DIR = os.path.normpath(
-    os.path.join(SCRIPT_DIR, "../../2_translated/menu")
+    os.path.join(SCRIPT_DIR, "../../../2_translated/menu")
 )
 
 OUTPUT_DIR = os.path.normpath(
-    os.path.join(SCRIPT_DIR, "../../3_patched/all")
+    os.path.join(SCRIPT_DIR, "../../../3_patched/all")
 )
 
 
