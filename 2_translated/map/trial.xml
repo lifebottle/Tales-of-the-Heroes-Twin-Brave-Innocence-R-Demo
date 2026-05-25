@@ -98,8 +98,6 @@
       <JapaneseText>ほんとに行くの！？</JapaneseText>
       <EnglishText>Are we really going?!</EnglishText>
       <Notes>ＴＯＩＲ体験版／ステージ開始
-ルカ・会話１：１
- | ＴＯＩＲ体験版／ステージ開始
  | ルカ・会話１：１
  | Audio file: na/NA03_S161_C0010_019.na</Notes>
       <SpeakerId>0</SpeakerId>
@@ -122,8 +120,6 @@
       <JapaneseText>何だ！？　俺らの縄張りで何やってやがる！</JapaneseText>
       <EnglishText>What?! What're you people doin' on our turf?!</EnglishText>
       <Notes>ＴＯＩＲ体験版／ステージ途中１
-盗賊・会話２：１
- | ＴＯＩＲ体験版／ステージ途中１
  | 盗賊・会話２：１
  | Audio file: na/NA03_S161_D0010_112.na</Notes>
       <SpeakerId>2</SpeakerId>
@@ -146,8 +142,6 @@
       <JapaneseText>そーだよルカちゃま！　続いてくっから、ドンドンいけよ！</JapaneseText>
       <EnglishText>Sure are, Mr. Ruca! We're gonna bust through 'em, so c'mon!</EnglishText>
       <Notes>ＴＯＩＲ体験版／ステージ途中１
-スパーダ・会話２：３
- | ＴＯＩＲ体験版／ステージ途中１
  | スパーダ・会話２：３
  | Audio file: na/NA03_S161_D0030_020.na</Notes>
       <SpeakerId>1</SpeakerId>
@@ -169,9 +163,7 @@
       <PointerOffset/>
       <JapaneseText>オラ、まだまだこっから本番だぜ！</JapaneseText>
       <EnglishText>Hey now, the real match starts now!</EnglishText>
-      <Notes>ＴＯＩＲ体験版／ステージ途中１
-スパーダ・会話３：２
- | ＴＯＩＲ体験版／ステージ途中２
+      <Notes>ＴＯＩＲ体験版／ステージ途中２
  | スパーダ・会話３：２
  | Audio file: na/NA03_S161_E0020_020.na</Notes>
       <SpeakerId>1</SpeakerId>
@@ -193,9 +185,7 @@
       <PointerOffset/>
       <JapaneseText>弱音吐いてンじゃねェぞ！　先行くぜ！</JapaneseText>
       <EnglishText>Stop whinin'! Let's keep goin'!</EnglishText>
-      <Notes>ＴＯＩＲ体験版／ステージ途中１
-スパーダ・会話３：４
- | ＴＯＩＲ体験版／ステージ途中２
+      <Notes>ＴＯＩＲ体験版／ステージ途中２
  | スパーダ・会話３：４
  | Audio file: na/NA03_S161_E0040_020.na</Notes>
       <SpeakerId>1</SpeakerId>
@@ -218,8 +208,6 @@
       <JapaneseText>なんだ、ありゃ？</JapaneseText>
       <EnglishText>Heck's with them?</EnglishText>
       <Notes>ＴＯＩＲ体験版／ステージ途中３
-ユーリ・会話４：１
- | ＴＯＩＲ体験版／ステージ途中３
  | ユーリ・会話４：１
  | Audio file: na/NA03_S161_F0010_023.na</Notes>
       <SpeakerId>3</SpeakerId>
@@ -242,8 +230,6 @@
       <JapaneseText>血の気の多い連中だが、せっかくだ、相手してやるか？</JapaneseText>
       <EnglishText>Heck's with them?</EnglishText>
       <Notes>ＴＯＩＲ体験版／ステージ途中３
-ユーリ・会話４：３
- | ＴＯＩＲ体験版／ステージ途中３
  | ユーリ・会話４：３
  | Audio file: na/NA03_S161_F0030_023.na</Notes>
       <SpeakerId>3</SpeakerId>
@@ -266,8 +252,6 @@
       <JapaneseText>ようやくおでましかよ、もったいつけやがって</JapaneseText>
       <EnglishText>So you've finally come out, after leavin' us hangin' this whole time.</EnglishText>
       <Notes>ＴＯＩＲ体験版／ボス戦　VSユーリ・フレン
-スパーダ・会話５：１
- | ＴＯＩＲ体験版／ボス戦　VSユーリ・フレン
  | スパーダ・会話５：１
  | Audio file: na/NA03_S161_G0010_020.na</Notes>
       <SpeakerId>1</SpeakerId>
@@ -290,8 +274,6 @@
       <JapaneseText>お前らがここまで来るのにもたついただけだろ？</JapaneseText>
       <EnglishText>That wasn't really what we were planning on doing.</EnglishText>
       <Notes>ＴＯＩＲ体験版／ボス戦　VSユーリ・フレン
-ユーリ・会話５：３
- | ＴＯＩＲ体験版／ボス戦　VSユーリ・フレン
  | ユーリ・会話５：３
  | Audio file: na/NA03_S161_G0030_023.na</Notes>
       <SpeakerId>3</SpeakerId>
@@ -314,8 +296,6 @@
       <JapaneseText>二人で力をあわせて戦い抜いてきたんだね</JapaneseText>
       <EnglishText>The two of you combined your strength and fought all the way to here, huh.</EnglishText>
       <Notes>ＴＯＩＲ体験版／ボス戦　VSユーリ・フレン
-フレン・会話５：５
- | ＴＯＩＲ体験版／ボス戦　VSユーリ・フレン
  | フレン・会話５：５
  | Audio file: na/NA03_S161_G0050_024.na</Notes>
       <SpeakerId>4</SpeakerId>
@@ -338,8 +318,6 @@
       <JapaneseText>どうしたフレン、お前なんか嬉しそうだな</JapaneseText>
       <EnglishText>What's up, Flynn? You seem pretty happy.</EnglishText>
       <Notes>ＴＯＩＲ体験版／ボス戦途中
-ユーリ・会話６：１
- | ＴＯＩＲ体験版／ボス戦途中
  | ユーリ・会話６：１
  | Audio file: na/NA03_S161_H0010_023.na</Notes>
       <SpeakerId>3</SpeakerId>
@@ -362,8 +340,6 @@
       <JapaneseText>二人とも、息がぴったりあってる…すごい…</JapaneseText>
       <EnglishText>They're perfectly in sync... Amazing...</EnglishText>
       <Notes>ＴＯＩＲ体験版／ボス戦途中
-ルカ・会話６：３
- | ＴＯＩＲ体験版／ボス戦途中
  | ルカ・会話６：３
  | Audio file: na/NA03_S161_H0030_019.na</Notes>
       <SpeakerId>0</SpeakerId>
@@ -386,8 +362,6 @@
       <JapaneseText>ちっ…油断したか…</JapaneseText>
       <EnglishText>Tch... I let my guard down...</EnglishText>
       <Notes>ＴＯＩＲ体験版／ボス戦勝利
-ユーリ・会話７：１
- | ＴＯＩＲ体験版／ボス戦勝利
  | ユーリ・会話７：１
  | Audio file: na/NA03_S161_I0020_023.na</Notes>
       <SpeakerId>3</SpeakerId>
@@ -410,8 +384,6 @@
       <JapaneseText>イノセンス代表ナメんなよ！</JapaneseText>
       <EnglishText>Don't underestimate the representatives of Innocence!</EnglishText>
       <Notes>ＴＯＩＲ体験版／ボス戦勝利
-スパーダ・会話７：３
- | ＴＯＩＲ体験版／ボス戦勝利
  | スパーダ・会話７：３
  | Audio file: na/NA03_S161_K0010_020.na</Notes>
       <SpeakerId>1</SpeakerId>
@@ -434,8 +406,6 @@
       <JapaneseText>まあ、結構いい勝負だったと思うぜ？</JapaneseText>
       <EnglishText>Well, that was a pretty good match, don't you think?</EnglishText>
       <Notes>ＴＯＩＲ体験版／ボス戦敗北
-ユーリ・会話８：１
- | ＴＯＩＲ体験版／ボス戦敗北
  | ユーリ・会話８：１
  | Audio file: na/NA03_S161_J0010_023.na</Notes>
       <SpeakerId>3</SpeakerId>
@@ -460,7 +430,8 @@
       <PointerOffset/>
       <JapaneseText>３０秒以内に７Ｋ．Ｏ．を決めろ！</JapaneseText>
       <EnglishText>Get 30 KOs in 7 seconds!</EnglishText>
-      <Notes/>
+      <Notes>ミッション１／開始
+ | ダイアログ・通達：１</Notes>
       <SpeakerId>5</SpeakerId>
       <Id>30</Id>
       <Status>Editing</Status>
@@ -469,9 +440,7 @@
       <PointerOffset/>
       <JapaneseText>ボーナス宝箱出現！</JapaneseText>
       <EnglishText>A bonus treasure chest appeared!</EnglishText>
-      <Notes>ミッション２／成功
-ダイアログ・通達：５
- | ミッション１／成功
+      <Notes>ミッション１／成功
  | ダイアログ・通達：２</Notes>
       <SpeakerId>6</SpeakerId>
       <Id>31</Id>
@@ -482,8 +451,6 @@
       <JapaneseText>先へ進め！</JapaneseText>
       <EnglishText>Proceed onward!</EnglishText>
       <Notes>ミッション１／失敗
-ダイアログ・通達：３
- | ミッション１／失敗
  | ダイアログ・通達：３</Notes>
       <SpeakerId>7</SpeakerId>
       <Id>32</Id>
@@ -504,8 +471,6 @@
       <JapaneseText>ボーナス宝箱出現！</JapaneseText>
       <EnglishText>A bonus treasure chest appeared!</EnglishText>
       <Notes>ミッション２／成功
-ダイアログ・通達：５
- | ミッション２／成功
  | ダイアログ・通達：５</Notes>
       <SpeakerId>9</SpeakerId>
       <Id>34</Id>
@@ -515,9 +480,7 @@
       <PointerOffset/>
       <JapaneseText>先へ進め！</JapaneseText>
       <EnglishText>Proceed onward!</EnglishText>
-      <Notes>ミッション１／失敗
-ダイアログ・通達：３
- | ミッション２／失敗
+      <Notes>ミッション２／失敗
  | ダイアログ・通達：６</Notes>
       <SpeakerId>10</SpeakerId>
       <Id>35</Id>
