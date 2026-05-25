@@ -7,210 +7,214 @@
       <EnglishText/>
       <Notes/>
       <Id>1</Id>
-      <Status>To Do</Status>
+      <Status>Done</Status>
     </Entry>
     <Entry>
       <PointerOffset>118</PointerOffset>
       <JapaneseText>絆レベル:%03d</JapaneseText>
-      <EnglishText/>
+      <EnglishText>
+BOND LEVEL: %03d</EnglishText>
       <Notes/>
       <Id>2</Id>
-      <Status>To Do</Status>
+      <Status>Editing</Status>
     </Entry>
     <Entry>
       <PointerOffset>133</PointerOffset>
       <JapaneseText>HP:%05d</JapaneseText>
-      <EnglishText/>
+      <EnglishText>HP: %05d</EnglishText>
       <Notes/>
       <Id>3</Id>
-      <Status>To Do</Status>
+      <Status>Editing</Status>
     </Entry>
     <Entry>
       <PointerOffset>142</PointerOffset>
       <JapaneseText>NEXT:%07d/%07d</JapaneseText>
-      <EnglishText/>
+      <EnglishText>NEXT: %07d/%07d</EnglishText>
       <Notes/>
       <Id>4</Id>
-      <Status>To Do</Status>
+      <Status>Editing</Status>
     </Entry>
     <Entry>
       <PointerOffset>158</PointerOffset>
       <JapaneseText>攻撃力:%04d</JapaneseText>
-      <EnglishText/>
+      <EnglishText>P.ATK : %04d</EnglishText>
       <Notes/>
       <Id>5</Id>
-      <Status>To Do</Status>
+      <Status>Editing</Status>
     </Entry>
     <Entry>
       <PointerOffset>171</PointerOffset>
       <JapaneseText>LV:%03d</JapaneseText>
-      <EnglishText/>
+      <EnglishText>LV: %03d</EnglishText>
       <Notes/>
       <Id>6</Id>
-      <Status>To Do</Status>
+      <Status>Editing</Status>
     </Entry>
     <Entry>
       <PointerOffset>142</PointerOffset>
       <JapaneseText>NEXT:%07d/%07d</JapaneseText>
-      <EnglishText/>
+      <EnglishText>NEXT: %07d/%07d</EnglishText>
       <Notes/>
       <Id>7</Id>
-      <Status>To Do</Status>
+      <Status>Editing</Status>
     </Entry>
     <Entry>
       <PointerOffset>180</PointerOffset>
       <JapaneseText>GALD : %09d</JapaneseText>
-      <EnglishText/>
+      <EnglishText>GALD: %09d</EnglishText>
       <Notes/>
       <Id>8</Id>
-      <Status>To Do</Status>
+      <Status>Editing</Status>
     </Entry>
     <Entry>
       <PointerOffset>193</PointerOffset>
       <JapaneseText>スキップ</JapaneseText>
-      <EnglishText/>
+      <EnglishText>Skip</EnglishText>
       <Notes/>
       <Id>9</Id>
-      <Status>To Do</Status>
+      <Status>Editing</Status>
     </Entry>
     <Entry>
       <PointerOffset>203</PointerOffset>
       <JapaneseText>次へ</JapaneseText>
-      <EnglishText/>
+      <EnglishText>Next</EnglishText>
       <Notes/>
       <Id>10</Id>
-      <Status>To Do</Status>
+      <Status>Editing</Status>
     </Entry>
     <Entry>
       <PointerOffset>209</PointerOffset>
       <JapaneseText>クリア報酬、%dガルドを手に入れた！</JapaneseText>
-      <EnglishText/>
+      <EnglishText>Completion Reward: You've earned %d GALD!</EnglishText>
       <Notes/>
       <Id>11</Id>
-      <Status>To Do</Status>
+      <Status>Editing</Status>
     </Entry>
     <Entry>
       <PointerOffset>245</PointerOffset>
       <JapaneseText>クリア報酬を手に入れられなかった</JapaneseText>
-      <EnglishText/>
+      <EnglishText>You were unable to obtain the completion reward</EnglishText>
       <Notes/>
       <Id>12</Id>
-      <Status>To Do</Status>
+      <Status>Editing</Status>
     </Entry>
     <Entry>
       <PointerOffset>279</PointerOffset>
       <JapaneseText>報酬武器、入手条件達成！</JapaneseText>
-      <EnglishText/>
+      <EnglishText>Requirements for reward weapon have been met!</EnglishText>
       <Notes/>
       <Id>13</Id>
-      <Status>To Do</Status>
+      <Status>Editing</Status>
     </Entry>
     <Entry>
       <PointerOffset>305</PointerOffset>
       <JapaneseText>連動サイトから報酬武器を入手できます</JapaneseText>
-      <EnglishText/>
+      <EnglishText>You can obtain reward weapons from the linked site</EnglishText>
       <Notes/>
       <Id>14</Id>
-      <Status>To Do</Status>
+      <Status>Problematic</Status>
     </Entry>
     <Entry>
       <PointerOffset>343</PointerOffset>
       <JapaneseText>%s
 HPの上限が上昇しました</JapaneseText>
-      <EnglishText/>
+      <EnglishText>%s 
+Max HP has increased</EnglishText>
       <Notes/>
       <Id>15</Id>
-      <Status>To Do</Status>
+      <Status>Editing</Status>
     </Entry>
     <Entry>
       <PointerOffset>370</PointerOffset>
       <JapaneseText>HP %d → %d</JapaneseText>
-      <EnglishText/>
+      <EnglishText>HP %d → %d</EnglishText>
       <Notes/>
       <Id>16</Id>
-      <Status>To Do</Status>
+      <Status>Editing</Status>
     </Entry>
     <Entry>
       <PointerOffset>383</PointerOffset>
       <JapaneseText>より多くのアクセサリーを
 装備できるようになりました</JapaneseText>
-      <EnglishText/>
+      <EnglishText>You can now equip
+more accessories</EnglishText>
       <Notes/>
       <Id>17</Id>
-      <Status>To Do</Status>
+      <Status>Editing</Status>
     </Entry>
     <Entry>
       <PointerOffset>436</PointerOffset>
       <JapaneseText>攻撃力が上昇しました</JapaneseText>
-      <EnglishText/>
+      <EnglishText>P.ATK has increased</EnglishText>
       <Notes/>
       <Id>18</Id>
-      <Status>To Do</Status>
+      <Status>Editing</Status>
     </Entry>
     <Entry>
       <PointerOffset>458</PointerOffset>
       <JapaneseText>攻撃力 %d → %d</JapaneseText>
-      <EnglishText/>
+      <EnglishText>P.ATK %d → %d</EnglishText>
       <Notes/>
       <Id>19</Id>
-      <Status>To Do</Status>
+      <Status>Editing</Status>
     </Entry>
     <Entry>
       <PointerOffset>475</PointerOffset>
       <JapaneseText>パートナーゲージの
 回復時間が短くなりました</JapaneseText>
-      <EnglishText/>
+      <EnglishText>The Partner Gauge recharge
+time has been reduced.</EnglishText>
       <Notes/>
       <Id>20</Id>
-      <Status>To Do</Status>
+      <Status>Editing</Status>
     </Entry>
     <Entry>
       <PointerOffset>520</PointerOffset>
       <JapaneseText>パートナーに新しい術・技を</JapaneseText>
-      <EnglishText/>
+      <EnglishText>You can now assign new spells </EnglishText>
       <Notes/>
       <Id>21</Id>
-      <Status>To Do</Status>
+      <Status>Editing</Status>
     </Entry>
     <Entry>
       <PointerOffset>548</PointerOffset>
       <JapaneseText>設定できるようになりました</JapaneseText>
-      <EnglishText/>
+      <EnglishText>and artes to your partner</EnglishText>
       <Notes/>
       <Id>22</Id>
-      <Status>To Do</Status>
+      <Status>Editing</Status>
     </Entry>
     <Entry>
       <PointerOffset>576</PointerOffset>
       <JapaneseText>連携秘奥義が使用可能になりました</JapaneseText>
-      <EnglishText/>
+      <EnglishText>Linked Mystic Artes are now available</EnglishText>
       <Notes/>
       <Id>23</Id>
-      <Status>To Do</Status>
+      <Status>Editing</Status>
     </Entry>
     <Entry>
       <PointerOffset>610</PointerOffset>
       <JapaneseText>秘奥義中に△ボタンを押すと発動します</JapaneseText>
-      <EnglishText/>
+      <EnglishText>Press the △ button during a Mystic Arte to activate them</EnglishText>
       <Notes/>
       <Id>24</Id>
-      <Status>To Do</Status>
+      <Status>Editing</Status>
     </Entry>
     <Entry>
       <PointerOffset>648</PointerOffset>
       <JapaneseText>連携秘奥義の</JapaneseText>
-      <EnglishText/>
+      <EnglishText>The number of times you can use</EnglishText>
       <Notes/>
       <Id>25</Id>
-      <Status>To Do</Status>
+      <Status>Editing</Status>
     </Entry>
     <Entry>
       <PointerOffset>662</PointerOffset>
       <JapaneseText>使用可能回数が増えました</JapaneseText>
-      <EnglishText/>
+      <EnglishText>Linked Mystic Arte has increased.</EnglishText>
       <Notes/>
       <Id>26</Id>
-      <Status>To Do</Status>
+      <Status>Editing</Status>
     </Entry>
   </Strings>
 </MenuText>

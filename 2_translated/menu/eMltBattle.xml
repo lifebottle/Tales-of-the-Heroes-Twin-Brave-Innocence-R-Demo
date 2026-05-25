@@ -7,39 +7,39 @@
       <EnglishText/>
       <Notes/>
       <Id>1</Id>
-      <Status>To Do</Status>
+      <Status>Done</Status>
     </Entry>
     <Entry>
       <PointerOffset>126</PointerOffset>
       <JapaneseText>制限時間内に最高hitsを叩きだせ</JapaneseText>
-      <EnglishText/>
+      <EnglishText>Score the most hits within the time limit</EnglishText>
       <Notes/>
       <Id>2</Id>
-      <Status>To Do</Status>
+      <Status>Editing</Status>
     </Entry>
     <Entry>
       <PointerOffset>158</PointerOffset>
       <JapaneseText>制限時間内に最高K.O.を叩きだせ</JapaneseText>
-      <EnglishText/>
+      <EnglishText>Score the most K.O.s within the time limit</EnglishText>
       <Notes/>
       <Id>3</Id>
-      <Status>To Do</Status>
+      <Status>Editing</Status>
     </Entry>
     <Entry>
       <PointerOffset>190</PointerOffset>
       <JapaneseText>最短時間で目標エネミーを撃破せよ</JapaneseText>
-      <EnglishText/>
+      <EnglishText>Defeat the target enemy in the shortest time possible</EnglishText>
       <Notes/>
       <Id>4</Id>
-      <Status>To Do</Status>
+      <Status>Editing</Status>
     </Entry>
     <Entry>
       <PointerOffset>224</PointerOffset>
       <JapaneseText>最短時間でエネミーを全滅せよ</JapaneseText>
-      <EnglishText/>
+      <EnglishText>Defeat all enemies in the shortest time possible</EnglishText>
       <Notes/>
       <Id>5</Id>
-      <Status>To Do</Status>
+      <Status>Editing</Status>
     </Entry>
     <Entry>
       <PointerOffset>254</PointerOffset>
@@ -76,34 +76,34 @@
     <Entry>
       <PointerOffset>352</PointerOffset>
       <JapaneseText>鋼体+%d</JapaneseText>
-      <EnglishText/>
+      <EnglishText>Armor +%d</EnglishText>
       <Notes/>
       <Id>10</Id>
-      <Status>To Do</Status>
+      <Status>Editing</Status>
     </Entry>
     <Entry>
       <PointerOffset>361</PointerOffset>
       <JapaneseText>威力+%d％</JapaneseText>
-      <EnglishText/>
+      <EnglishText>Power +%d%</EnglishText>
       <Notes/>
       <Id>11</Id>
-      <Status>To Do</Status>
+      <Status>Editing</Status>
     </Entry>
     <Entry>
       <PointerOffset>372</PointerOffset>
       <JapaneseText>hits受付時間・%s</JapaneseText>
-      <EnglishText/>
+      <EnglishText>Hits Window: %s</EnglishText>
       <Notes/>
       <Id>12</Id>
-      <Status>To Do</Status>
+      <Status>Editing</Status>
     </Entry>
     <Entry>
       <PointerOffset>390</PointerOffset>
       <JapaneseText>hits+%d</JapaneseText>
-      <EnglishText/>
+      <EnglishText>Hits +%d</EnglishText>
       <Notes/>
       <Id>13</Id>
-      <Status>To Do</Status>
+      <Status>Editing</Status>
     </Entry>
     <Entry>
       <PointerOffset>399</PointerOffset>
@@ -117,7 +117,7 @@
       <PointerOffset>403</PointerOffset>
       <JapaneseText>大</JapaneseText>
       <EnglishText>Big</EnglishText>
-      <Notes/>
+      <Notes>could be large also</Notes>
       <Id>15</Id>
       <Status>Editing</Status>
     </Entry>

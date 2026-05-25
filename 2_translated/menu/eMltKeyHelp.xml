@@ -4,10 +4,10 @@
     <Entry>
       <PointerOffset>60</PointerOffset>
       <JapaneseText>戻る</JapaneseText>
-      <EnglishText/>
+      <EnglishText>Back</EnglishText>
       <Notes/>
       <Id>1</Id>
-      <Status>To Do</Status>
+      <Status>Editing</Status>
     </Entry>
     <Entry>
       <PointerOffset>66</PointerOffset>
@@ -20,58 +20,58 @@
     <Entry>
       <PointerOffset>72</PointerOffset>
       <JapaneseText>再生</JapaneseText>
-      <EnglishText/>
+      <EnglishText>Play</EnglishText>
       <Notes/>
       <Id>3</Id>
-      <Status>To Do</Status>
+      <Status>Editing</Status>
     </Entry>
     <Entry>
       <PointerOffset>78</PointerOffset>
       <JapaneseText>ページ送り</JapaneseText>
-      <EnglishText/>
+      <EnglishText>Next Page</EnglishText>
       <Notes/>
       <Id>4</Id>
-      <Status>To Do</Status>
+      <Status>Editing</Status>
     </Entry>
     <Entry>
       <PointerOffset>90</PointerOffset>
       <JapaneseText>設定</JapaneseText>
-      <EnglishText/>
+      <EnglishText>Settings</EnglishText>
       <Notes/>
       <Id>5</Id>
-      <Status>To Do</Status>
+      <Status>Editing</Status>
     </Entry>
     <Entry>
       <PointerOffset>96</PointerOffset>
       <JapaneseText>確認</JapaneseText>
-      <EnglishText/>
+      <EnglishText>Confirm</EnglishText>
       <Notes/>
       <Id>6</Id>
-      <Status>To Do</Status>
+      <Status>Editing</Status>
     </Entry>
     <Entry>
       <PointerOffset>102</PointerOffset>
       <JapaneseText>初期設定に戻す</JapaneseText>
-      <EnglishText/>
+      <EnglishText>Restore Defaults</EnglishText>
       <Notes/>
       <Id>7</Id>
-      <Status>To Do</Status>
+      <Status>Editing</Status>
     </Entry>
     <Entry>
       <PointerOffset>118</PointerOffset>
       <JapaneseText>設定完了</JapaneseText>
-      <EnglishText/>
+      <EnglishText>Setup Complete</EnglishText>
       <Notes/>
       <Id>8</Id>
-      <Status>To Do</Status>
+      <Status>Editing</Status>
     </Entry>
     <Entry>
       <PointerOffset>128</PointerOffset>
       <JapaneseText>選択</JapaneseText>
-      <EnglishText/>
+      <EnglishText>Select</EnglishText>
       <Notes/>
       <Id>9</Id>
-      <Status>To Do</Status>
+      <Status>Editing</Status>
     </Entry>
   </Strings>
   <Strings>
@@ -79,50 +79,50 @@
     <Entry>
       <PointerOffset>164</PointerOffset>
       <JapaneseText>モデル回転</JapaneseText>
-      <EnglishText/>
+      <EnglishText>Rotate Model</EnglishText>
       <Notes/>
       <Id>10</Id>
-      <Status>To Do</Status>
+      <Status>Editing</Status>
     </Entry>
     <Entry>
       <PointerOffset>176</PointerOffset>
       <JapaneseText>ぬいぐるめっとON/OFF</JapaneseText>
-      <EnglishText/>
+      <EnglishText>Stuffed Animal Mode ON/OFF</EnglishText>
       <Notes/>
       <Id>11</Id>
-      <Status>To Do</Status>
+      <Status>Editing</Status>
     </Entry>
     <Entry>
       <PointerOffset>198</PointerOffset>
       <JapaneseText>メインメニューへ</JapaneseText>
-      <EnglishText/>
+      <EnglishText>Back to Main Menu</EnglishText>
       <Notes/>
       <Id>12</Id>
-      <Status>To Do</Status>
+      <Status>Editing</Status>
     </Entry>
     <Entry>
       <PointerOffset>216</PointerOffset>
       <JapaneseText>外す</JapaneseText>
-      <EnglishText/>
+      <EnglishText>Remove</EnglishText>
       <Notes/>
       <Id>13</Id>
-      <Status>To Do</Status>
+      <Status>Editing</Status>
     </Entry>
     <Entry>
       <PointerOffset>222</PointerOffset>
       <JapaneseText>切り替え</JapaneseText>
-      <EnglishText/>
+      <EnglishText>Switch</EnglishText>
       <Notes/>
       <Id>14</Id>
-      <Status>To Do</Status>
+      <Status>Editing</Status>
     </Entry>
     <Entry>
       <PointerOffset>232</PointerOffset>
       <JapaneseText>並べ替え</JapaneseText>
-      <EnglishText/>
+      <EnglishText>Sort</EnglishText>
       <Notes/>
       <Id>15</Id>
-      <Status>To Do</Status>
+      <Status>Editing</Status>
     </Entry>
   </Strings>
   <Strings>
@@ -130,10 +130,10 @@
     <Entry>
       <PointerOffset>222</PointerOffset>
       <JapaneseText>切り替え</JapaneseText>
-      <EnglishText/>
+      <EnglishText>Switch</EnglishText>
       <Notes/>
       <Id>16</Id>
-      <Status>To Do</Status>
+      <Status>Editing</Status>
     </Entry>
   </Strings>
   <Strings>
@@ -141,26 +141,26 @@
     <Entry>
       <PointerOffset>268</PointerOffset>
       <JapaneseText>キャラ切り替え</JapaneseText>
-      <EnglishText/>
+      <EnglishText>Change Character</EnglishText>
       <Notes/>
       <Id>17</Id>
-      <Status>To Do</Status>
+      <Status>Editing</Status>
     </Entry>
     <Entry>
       <PointerOffset>284</PointerOffset>
       <JapaneseText>情報切り替え</JapaneseText>
-      <EnglishText/>
+      <EnglishText>Change Info</EnglishText>
       <Notes/>
       <Id>18</Id>
-      <Status>To Do</Status>
+      <Status>Editing</Status>
     </Entry>
     <Entry>
       <PointerOffset>298</PointerOffset>
       <JapaneseText>閲覧</JapaneseText>
-      <EnglishText/>
+      <EnglishText>View</EnglishText>
       <Notes/>
       <Id>19</Id>
-      <Status>To Do</Status>
+      <Status>Editing</Status>
     </Entry>
   </Strings>
 </MenuText>
