@@ -1,4 +1,5 @@
 <SceneText>
+  <FriendlyName>街・Ａルート・昼・短縮済み</FriendlyName>
   <Speakers>
     <Section>Speaker</Section>
     <Entry>
@@ -11,16 +12,16 @@
     </Entry>
     <Entry>
       <PointerOffset/>
-      <JapaneseText>Ruca</JapaneseText>
-      <EnglishText>Ruca</EnglishText>
+      <JapaneseText>Marta</JapaneseText>
+      <EnglishText>Marta</EnglishText>
       <Notes/>
       <Id>1</Id>
       <Status>Done</Status>
     </Entry>
     <Entry>
       <PointerOffset/>
-      <JapaneseText>System</JapaneseText>
-      <EnglishText>System</EnglishText>
+      <JapaneseText>Ruca</JapaneseText>
+      <EnglishText>Ruca</EnglishText>
       <Notes/>
       <Id>2</Id>
       <Status>Done</Status>
@@ -35,10 +36,18 @@
     </Entry>
     <Entry>
       <PointerOffset/>
-      <JapaneseText>Marta</JapaneseText>
-      <EnglishText>Marta</EnglishText>
+      <JapaneseText>Young Man A</JapaneseText>
+      <EnglishText>Young Man A</EnglishText>
       <Notes/>
       <Id>4</Id>
+      <Status>Done</Status>
+    </Entry>
+    <Entry>
+      <PointerOffset/>
+      <JapaneseText>System</JapaneseText>
+      <EnglishText>System</EnglishText>
+      <Notes/>
+      <Id>5</Id>
       <Status>Done</Status>
     </Entry>
     <Entry>
@@ -46,7 +55,15 @@
       <JapaneseText>ミッション１・開始！</JapaneseText>
       <EnglishText/>
       <Notes/>
-      <Id>5</Id>
+      <Id>6</Id>
+      <Status>To Do</Status>
+    </Entry>
+    <Entry>
+      <PointerOffset/>
+      <JapaneseText>ミッション１・成功！</JapaneseText>
+      <EnglishText/>
+      <Notes/>
+      <Id>7</Id>
       <Status>To Do</Status>
     </Entry>
     <Entry>
@@ -54,7 +71,15 @@
       <JapaneseText>ミッション１・失敗！</JapaneseText>
       <EnglishText/>
       <Notes/>
-      <Id>6</Id>
+      <Id>8</Id>
+      <Status>To Do</Status>
+    </Entry>
+    <Entry>
+      <PointerOffset/>
+      <JapaneseText>確認用ミッション</JapaneseText>
+      <EnglishText/>
+      <Notes/>
+      <Id>9</Id>
       <Status>To Do</Status>
     </Entry>
   </Speakers>
@@ -65,180 +90,428 @@
       <JapaneseText>女だからって手加減はしねぇぞ</JapaneseText>
       <EnglishText/>
       <Notes>Iスパーダ編／ステージ開始
-スパーダ・会話１：１</Notes>
+スパーダ・会話１：１
+ | Iスパーダ編／ステージ開始
+ | スパーダ・会話１：１
+ | Audio file: na/NA03_S101_C0010_020.na</Notes>
       <SpeakerId>0</SpeakerId>
       <Id>0</Id>
       <Status>To Do</Status>
     </Entry>
     <Entry>
       <PointerOffset/>
+      <JapaneseText>そっちこそ！　怪我しても恨まないでよね、チンピラさん</JapaneseText>
+      <EnglishText/>
+      <Notes>Iスパーダ編／ステージ開始
+ | マルタ・会話１：２
+ | Audio file: na/NA03_S101_C0020_022.na</Notes>
+      <SpeakerId>1</SpeakerId>
+      <Id>1</Id>
+      <Status/>
+    </Entry>
+    <Entry>
+      <PointerOffset/>
       <JapaneseText>あぁ、どうしてこんな事に……</JapaneseText>
       <EnglishText/>
       <Notes>Iスパーダ編／ステージ開始
-ルカ・会話１：３</Notes>
-      <SpeakerId>1</SpeakerId>
-      <Id>1</Id>
+ルカ・会話１：３
+ | Iスパーダ編／ステージ開始
+ | ルカ・会話１：３
+ | Audio file: na/NA03_S101_C0030_019.na</Notes>
+      <SpeakerId>2</SpeakerId>
+      <Id>2</Id>
       <Status>To Do</Status>
+    </Entry>
+    <Entry>
+      <PointerOffset/>
+      <JapaneseText>いくぜぇ！　俺にケンカ売った事後悔させてやるよ！</JapaneseText>
+      <EnglishText/>
+      <Notes>Iスパーダ編／ステージ開始
+ | エミルＲ・会話１：４
+ | Audio file: na/NA03_S101_C0040_036.na</Notes>
+      <SpeakerId>3</SpeakerId>
+      <Id>3</Id>
+      <Status/>
     </Entry>
     <Entry>
       <PointerOffset/>
       <JapaneseText>え！？　あの人、さっきと様子が……</JapaneseText>
       <EnglishText/>
       <Notes>Iスパーダ編／ステージ開始
-ルカ・会話１：５</Notes>
-      <SpeakerId>1</SpeakerId>
-      <Id>2</Id>
+ルカ・会話１：５
+ | Iスパーダ編／ステージ開始
+ | ルカ・会話１：５
+ | Audio file: na/NA03_S101_C0050_019.na</Notes>
+      <SpeakerId>2</SpeakerId>
+      <Id>4</Id>
       <Status>To Do</Status>
+    </Entry>
+    <Entry>
+      <PointerOffset/>
+      <JapaneseText>ケンカだー！　ケンカ祭りだ！　やっちまえ！</JapaneseText>
+      <EnglishText/>
+      <Notes>Iスパーダ編／ステージ開始
+ | 若者・会話１：６
+ | Audio file: na/NA03_S101_C0060_114.na</Notes>
+      <SpeakerId>4</SpeakerId>
+      <Id>5</Id>
+      <Status/>
     </Entry>
     <Entry>
       <PointerOffset/>
       <JapaneseText>血気盛んな街の若者達が、祭り気分で乱入！</JapaneseText>
       <EnglishText/>
       <Notes>ステージ開始
-天の声・天の声：１</Notes>
-      <SpeakerId>2</SpeakerId>
-      <Id>3</Id>
+天の声・天の声：１
+ | ステージ開始
+ | 天の声・天の声：１</Notes>
+      <SpeakerId>5</SpeakerId>
+      <Id>6</Id>
       <Status>To Do</Status>
+    </Entry>
+    <Entry>
+      <PointerOffset/>
+      <JapaneseText>若者のケンカ祭を突破し、マルタ達とのケンカに勝利せよ！</JapaneseText>
+      <EnglishText/>
+      <Notes>ステージ開始
+ | 天の声・天の声：２</Notes>
+      <SpeakerId>5</SpeakerId>
+      <Id>7</Id>
+      <Status/>
     </Entry>
     <Entry>
       <PointerOffset/>
       <JapaneseText>ウゼェな！　弱ェくせにカラんでくんじゃねェよ！</JapaneseText>
       <EnglishText/>
       <Notes>Iスパーダ編／ステージ途中１
-スパーダ・会話２：１</Notes>
+スパーダ・会話２：１
+ | Iスパーダ編／ステージ途中１
+ | スパーダ・会話２：１
+ | Audio file: na/NA03_S101_D0010_020.na</Notes>
       <SpeakerId>0</SpeakerId>
-      <Id>4</Id>
+      <Id>8</Id>
       <Status>To Do</Status>
+    </Entry>
+    <Entry>
+      <PointerOffset/>
+      <JapaneseText>スパーダ！　あんまり乱暴な事はしないで！　</JapaneseText>
+      <EnglishText/>
+      <Notes>Iスパーダ編／ステージ途中１
+ | ルカ・会話２：２
+ | Audio file: na/NA03_S101_D0020_019.na</Notes>
+      <SpeakerId>2</SpeakerId>
+      <Id>9</Id>
+      <Status/>
     </Entry>
     <Entry>
       <PointerOffset/>
       <JapaneseText>ごめんなさい！　ごめんなさい！</JapaneseText>
       <EnglishText/>
       <Notes>Iスパーダ編／ステージ途中１
-ルカ・会話２：３</Notes>
-      <SpeakerId>1</SpeakerId>
-      <Id>5</Id>
+ルカ・会話２：３
+ | Iスパーダ編／ステージ途中１
+ | ルカ・会話２：３
+ | Audio file: na/NA03_S101_D0030_019.na</Notes>
+      <SpeakerId>2</SpeakerId>
+      <Id>10</Id>
       <Status>To Do</Status>
+    </Entry>
+    <Entry>
+      <PointerOffset/>
+      <JapaneseText>ヒャヒャヒャ、全員ブチのめしてやるぜー！</JapaneseText>
+      <EnglishText/>
+      <Notes>Iスパーダ編／ステージ途中１
+ | スパーダ・会話２：４
+ | Audio file: na/NA03_S101_D0040_020.na</Notes>
+      <SpeakerId>0</SpeakerId>
+      <Id>11</Id>
+      <Status/>
     </Entry>
     <Entry>
       <PointerOffset/>
       <JapaneseText>どういうコンビだよ、あれは</JapaneseText>
       <EnglishText/>
       <Notes>Iスパーダ編／ステージ途中１
-エミルＲ・会話２：５</Notes>
+エミルＲ・会話２：５
+ | Iスパーダ編／ステージ途中１
+ | エミルＲ・会話２：５
+ | Audio file: na/NA03_S101_D0050_036.na</Notes>
       <SpeakerId>3</SpeakerId>
-      <Id>6</Id>
+      <Id>12</Id>
       <Status>To Do</Status>
+    </Entry>
+    <Entry>
+      <PointerOffset/>
+      <JapaneseText>エミル、先陣を切って戦闘に出撃！</JapaneseText>
+      <EnglishText/>
+      <Notes>Iスパーダ編／ステージ途中１
+ | 天の声・天の声：３</Notes>
+      <SpeakerId>5</SpeakerId>
+      <Id>13</Id>
+      <Status/>
     </Entry>
     <Entry>
       <PointerOffset/>
       <JapaneseText>チンピラなんか倒して、早く世界樹に向かおう、エミル！</JapaneseText>
       <EnglishText/>
       <Notes>Iスパーダ編／ステージ途中２
-マルタ・会話３：１</Notes>
-      <SpeakerId>4</SpeakerId>
-      <Id>7</Id>
+マルタ・会話３：１
+ | Iスパーダ編／ステージ途中２
+ | マルタ・会話３：１
+ | Audio file: na/NA03_S101_E0010_022.na</Notes>
+      <SpeakerId>1</SpeakerId>
+      <Id>14</Id>
       <Status>To Do</Status>
+    </Entry>
+    <Entry>
+      <PointerOffset/>
+      <JapaneseText>え？　君達も世界樹に向かってるの？</JapaneseText>
+      <EnglishText/>
+      <Notes>Iスパーダ編／ステージ途中２
+ | ルカ・会話３：２
+ | Audio file: na/NA03_S101_E0020_019.na</Notes>
+      <SpeakerId>2</SpeakerId>
+      <Id>15</Id>
+      <Status/>
     </Entry>
     <Entry>
       <PointerOffset/>
       <JapaneseText>てめぇには関係ねぇだろ！　黙って俺にやられてろ！</JapaneseText>
       <EnglishText/>
       <Notes>Iスパーダ編／ステージ途中２
-エミルＲ・会話３：３</Notes>
+エミルＲ・会話３：３
+ | Iスパーダ編／ステージ途中２
+ | エミルＲ・会話３：３
+ | Audio file: na/NA03_S101_E0030_036.na</Notes>
       <SpeakerId>3</SpeakerId>
-      <Id>8</Id>
+      <Id>16</Id>
       <Status>To Do</Status>
+    </Entry>
+    <Entry>
+      <PointerOffset/>
+      <JapaneseText>いいねぇ。さっきのは優等生のふりだったってか？</JapaneseText>
+      <EnglishText/>
+      <Notes>Iスパーダ編／ステージ途中２
+ | スパーダ・会話３：４
+ | Audio file: na/NA03_S101_E0040_020.na</Notes>
+      <SpeakerId>0</SpeakerId>
+      <Id>17</Id>
+      <Status/>
     </Entry>
     <Entry>
       <PointerOffset/>
       <JapaneseText>こっちの方が話が早くてオレは好きだぜ！</JapaneseText>
       <EnglishText/>
       <Notes>Iスパーダ編／ステージ途中２
-スパーダ・会話３：５</Notes>
+スパーダ・会話３：５
+ | Iスパーダ編／ステージ途中２
+ | スパーダ・会話３：５
+ | Audio file: na/NA03_S101_E0050_020.na</Notes>
       <SpeakerId>0</SpeakerId>
-      <Id>9</Id>
+      <Id>18</Id>
       <Status>To Do</Status>
+    </Entry>
+    <Entry>
+      <PointerOffset/>
+      <JapaneseText>エミル、態勢を立て直す為に後退！</JapaneseText>
+      <EnglishText/>
+      <Notes>Iスパーダ編／ステージ途中２
+ | 天の声・天の声：４</Notes>
+      <SpeakerId>5</SpeakerId>
+      <Id>19</Id>
+      <Status/>
     </Entry>
     <Entry>
       <PointerOffset/>
       <JapaneseText>キミ、このチンピラに無理やり戦わされてるんでしょ？</JapaneseText>
       <EnglishText/>
       <Notes>Iスパーダ編／ボス戦　ＶＳエミル・マルタ
-マルタ・会話４：１</Notes>
-      <SpeakerId>4</SpeakerId>
-      <Id>10</Id>
+マルタ・会話４：１
+ | Iスパーダ編／ボス戦　ＶＳエミル・マルタ
+ | マルタ・会話４：１
+ | Audio file: na/NA03_S101_F0010_022.na</Notes>
+      <SpeakerId>1</SpeakerId>
+      <Id>20</Id>
       <Status>To Do</Status>
+    </Entry>
+    <Entry>
+      <PointerOffset/>
+      <JapaneseText>え、僕は……</JapaneseText>
+      <EnglishText/>
+      <Notes>Iスパーダ編／ボス戦　ＶＳエミル・マルタ
+ | ルカ・会話４：２
+ | Audio file: na/NA03_S101_F0020_019.na</Notes>
+      <SpeakerId>2</SpeakerId>
+      <Id>21</Id>
+      <Status/>
     </Entry>
     <Entry>
       <PointerOffset/>
       <JapaneseText>待っててね！　今チンピラを倒してキミを助けてあげるから</JapaneseText>
       <EnglishText/>
       <Notes>Iスパーダ編／ボス戦　ＶＳエミル・マルタ
-マルタ・会話４：３</Notes>
-      <SpeakerId>4</SpeakerId>
-      <Id>11</Id>
+マルタ・会話４：３
+ | Iスパーダ編／ボス戦　ＶＳエミル・マルタ
+ | マルタ・会話４：３
+ | Audio file: na/NA03_S101_F0030_022.na</Notes>
+      <SpeakerId>1</SpeakerId>
+      <Id>22</Id>
       <Status>To Do</Status>
+    </Entry>
+    <Entry>
+      <PointerOffset/>
+      <JapaneseText>うわっウゼ。思い込み強い女とかサイアクだな</JapaneseText>
+      <EnglishText/>
+      <Notes>Iスパーダ編／ボス戦　ＶＳエミル・マルタ
+ | スパーダ・会話４：４
+ | Audio file: na/NA03_S101_F0040_020.na</Notes>
+      <SpeakerId>0</SpeakerId>
+      <Id>23</Id>
+      <Status/>
     </Entry>
     <Entry>
       <PointerOffset/>
       <JapaneseText>僕は……僕は無理やり戦わされてなんかいない</JapaneseText>
       <EnglishText/>
       <Notes>Iスパーダ編／ボス戦途中
-ルカ・会話５：１</Notes>
-      <SpeakerId>1</SpeakerId>
-      <Id>12</Id>
+ルカ・会話５：１
+ | Iスパーダ編／ボス戦途中
+ | ルカ・会話５：１
+ | Audio file: na/NA03_S101_G0010_019.na</Notes>
+      <SpeakerId>2</SpeakerId>
+      <Id>24</Id>
       <Status>To Do</Status>
+    </Entry>
+    <Entry>
+      <PointerOffset/>
+      <JapaneseText>決めたんだ、世界樹に向かうって。自分で決めたんだ</JapaneseText>
+      <EnglishText/>
+      <Notes>Iスパーダ編／ボス戦途中
+ | ルカ・会話５：２
+ | Audio file: na/NA03_S101_G0020_019.na</Notes>
+      <SpeakerId>2</SpeakerId>
+      <Id>25</Id>
+      <Status/>
     </Entry>
     <Entry>
       <PointerOffset/>
       <JapaneseText>へっ、言うじゃねぇか、ルカ。少しは見直したぜ</JapaneseText>
       <EnglishText/>
       <Notes>Iスパーダ編／ボス戦途中
-スパーダ・会話５：３</Notes>
+スパーダ・会話５：３
+ | Iスパーダ編／ボス戦途中
+ | スパーダ・会話５：３
+ | Audio file: na/NA03_S101_G0030_020.na</Notes>
       <SpeakerId>0</SpeakerId>
-      <Id>13</Id>
+      <Id>26</Id>
       <Status>To Do</Status>
+    </Entry>
+    <Entry>
+      <PointerOffset/>
+      <JapaneseText>世界樹に向かう？　無理だな、お前らみたいな雑魚じゃ</JapaneseText>
+      <EnglishText/>
+      <Notes>Iスパーダ編／ボス戦途中
+ | エミルＲ・会話５：４
+ | Audio file: na/NA03_S101_G0040_036.na</Notes>
+      <SpeakerId>3</SpeakerId>
+      <Id>27</Id>
+      <Status/>
     </Entry>
     <Entry>
       <PointerOffset/>
       <JapaneseText>よくもエミルを！　もう許さないんだから！</JapaneseText>
       <EnglishText/>
       <Notes>Iスパーダ編／ボス戦　先にエミル撃破
-マルタ・会話６：１</Notes>
-      <SpeakerId>4</SpeakerId>
-      <Id>14</Id>
+マルタ・会話６：１
+ | Iスパーダ編／ボス戦　先にエミル撃破
+ | マルタ・会話６：１
+ | Audio file: na/NA03_S101_H0010_022.na</Notes>
+      <SpeakerId>1</SpeakerId>
+      <Id>28</Id>
       <Status>To Do</Status>
+    </Entry>
+    <Entry>
+      <PointerOffset/>
+      <JapaneseText>マルターーーー！！！</JapaneseText>
+      <EnglishText/>
+      <Notes>Iスパーダ編／ボス戦　先にマルタ撃破
+ | エミルＲ・会話７：１
+ | Audio file: na/NA03_S101_I0010_036.na</Notes>
+      <SpeakerId>3</SpeakerId>
+      <Id>29</Id>
+      <Status/>
     </Entry>
     <Entry>
       <PointerOffset/>
       <JapaneseText>てめぇらもう容赦しねぇ！　叩きつぶしてやる！</JapaneseText>
       <EnglishText/>
       <Notes>Iスパーダ編／ボス戦　先にエミル撃破
-エミルＲ・会話７：２</Notes>
+エミルＲ・会話７：２
+ | Iスパーダ編／ボス戦　先にマルタ撃破
+ | エミルＲ・会話７：２
+ | Audio file: na/NA03_S101_I0020_036.na</Notes>
       <SpeakerId>3</SpeakerId>
-      <Id>15</Id>
+      <Id>30</Id>
       <Status>To Do</Status>
+    </Entry>
+    <Entry>
+      <PointerOffset/>
+      <JapaneseText>こんなチンピラに負けるなんて！</JapaneseText>
+      <EnglishText/>
+      <Notes>Iスパーダ編／ボス戦勝利
+ | マルタ・会話８：１
+ | Audio file: na/NA03_S101_J0010_022.na</Notes>
+      <SpeakerId>1</SpeakerId>
+      <Id>31</Id>
+      <Status/>
     </Entry>
     <Entry>
       <PointerOffset/>
       <JapaneseText>誰がチンピラだぁ！？　誰がよぉ！</JapaneseText>
       <EnglishText/>
       <Notes>Iスパーダ編／ボス戦　先にエミル撃破
-スパーダ・会話８：２</Notes>
+スパーダ・会話８：２
+ | Iスパーダ編／ボス戦勝利
+ | スパーダ・会話８：２
+ | Audio file: na/NA03_S101_J0020_020.na</Notes>
       <SpeakerId>0</SpeakerId>
-      <Id>16</Id>
+      <Id>32</Id>
       <Status>To Do</Status>
+    </Entry>
+    <Entry>
+      <PointerOffset/>
+      <JapaneseText>スパーダ……チンピラを否定出来る言葉遣いじゃないってば</JapaneseText>
+      <EnglishText/>
+      <Notes>Iスパーダ編／ボス戦勝利
+ | ルカ・会話８：３
+ | Audio file: na/NA03_S101_J0030_019.na</Notes>
+      <SpeakerId>2</SpeakerId>
+      <Id>33</Id>
+      <Status/>
     </Entry>
     <Entry>
       <PointerOffset/>
       <JapaneseText>な〜んだ！　やっぱりチンピラって口ばっかりだね</JapaneseText>
       <EnglishText/>
       <Notes>Iスパーダ編／ボス戦敗北
-マルタ・会話９：１</Notes>
-      <SpeakerId>4</SpeakerId>
-      <Id>17</Id>
+マルタ・会話９：１
+ | Iスパーダ編／ボス戦敗北
+ | マルタ・会話９：１
+ | Audio file: na/NA03_S101_K0010_022.na</Notes>
+      <SpeakerId>1</SpeakerId>
+      <Id>34</Id>
       <Status>To Do</Status>
+    </Entry>
+    <Entry>
+      <PointerOffset/>
+      <JapaneseText>テメェ……マジ覚えとけよ</JapaneseText>
+      <EnglishText/>
+      <Notes>Iスパーダ編／ボス戦敗北
+ | スパーダ・会話９：２
+ | Audio file: na/NA03_S101_K0020_020.na</Notes>
+      <SpeakerId>0</SpeakerId>
+      <Id>35</Id>
+      <Status/>
     </Entry>
   </Strings>
   <Strings>
@@ -248,20 +521,44 @@
       <JapaneseText>３０秒以内に３５Ｋ．Ｏ．を決めろ！</JapaneseText>
       <EnglishText/>
       <Notes>ミッション１／開始
-ダイアログ・通達：１</Notes>
-      <SpeakerId>5</SpeakerId>
-      <Id>18</Id>
+ダイアログ・通達：１
+ | ミッション１／開始
+ | ダイアログ・通達：１</Notes>
+      <SpeakerId>6</SpeakerId>
+      <Id>36</Id>
       <Status>To Do</Status>
+    </Entry>
+    <Entry>
+      <PointerOffset/>
+      <JapaneseText>ボーナス宝箱出現！</JapaneseText>
+      <EnglishText/>
+      <Notes>ミッション１／成功
+ | ダイアログ・通達：２</Notes>
+      <SpeakerId>7</SpeakerId>
+      <Id>37</Id>
+      <Status/>
     </Entry>
     <Entry>
       <PointerOffset/>
       <JapaneseText>先へ進め！</JapaneseText>
       <EnglishText/>
       <Notes>ミッション１／失敗
-ダイアログ・通達：３</Notes>
-      <SpeakerId>6</SpeakerId>
-      <Id>19</Id>
+ダイアログ・通達：３
+ | ミッション１／失敗
+ | ダイアログ・通達：３</Notes>
+      <SpeakerId>8</SpeakerId>
+      <Id>38</Id>
       <Status>To Do</Status>
+    </Entry>
+    <Entry>
+      <PointerOffset/>
+      <JapaneseText>判定チェック用です。後日消去します</JapaneseText>
+      <EnglishText/>
+      <Notes>ミッション２／実験
+ | ダイアログ・通達：４</Notes>
+      <SpeakerId>9</SpeakerId>
+      <Id>39</Id>
+      <Status/>
     </Entry>
   </Strings>
 </SceneText>
