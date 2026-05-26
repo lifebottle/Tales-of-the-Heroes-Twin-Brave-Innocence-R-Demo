@@ -76,7 +76,7 @@
     <Entry>
       <PointerOffset>352</PointerOffset>
       <JapaneseText>鋼体+%d</JapaneseText>
-      <EnglishText>Armor +%d</EnglishText>
+      <EnglishText>Defense +%d</EnglishText>
       <Notes/>
       <Id>10</Id>
       <Status>Editing</Status>
@@ -84,7 +84,7 @@
     <Entry>
       <PointerOffset>361</PointerOffset>
       <JapaneseText>威力+%d％</JapaneseText>
-      <EnglishText>Power +%d%</EnglishText>
+      <EnglishText>Attack +%d%</EnglishText>
       <Notes/>
       <Id>11</Id>
       <Status>Editing</Status>

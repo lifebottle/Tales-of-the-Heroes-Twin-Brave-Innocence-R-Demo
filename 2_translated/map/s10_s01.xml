@@ -90,8 +90,6 @@
       <JapaneseText>女だからって手加減はしねぇぞ</JapaneseText>
       <EnglishText>I ain't goin' easy on you just 'cause' you're a woman.</EnglishText>
       <Notes>Iスパーダ編／ステージ開始
-スパーダ・会話１：１
- | Iスパーダ編／ステージ開始
  | スパーダ・会話１：１
  | Audio file: na/NA03_S101_C0010_020.na</Notes>
       <SpeakerId>0</SpeakerId>
@@ -114,8 +112,6 @@
       <JapaneseText>あぁ、どうしてこんな事に……</JapaneseText>
       <EnglishText>Ahhh, how did it end up like this...</EnglishText>
       <Notes>Iスパーダ編／ステージ開始
-ルカ・会話１：３
- | Iスパーダ編／ステージ開始
  | ルカ・会話１：３
  | Audio file: na/NA03_S101_C0030_019.na</Notes>
       <SpeakerId>2</SpeakerId>
@@ -138,8 +134,6 @@
       <JapaneseText>え！？　あの人、さっきと様子が……</JapaneseText>
       <EnglishText>Huh?! That person seems different from before...</EnglishText>
       <Notes>Iスパーダ編／ステージ開始
-ルカ・会話１：５
- | Iスパーダ編／ステージ開始
  | ルカ・会話１：５
  | Audio file: na/NA03_S101_C0050_019.na</Notes>
       <SpeakerId>2</SpeakerId>
@@ -162,8 +156,6 @@
       <JapaneseText>血気盛んな街の若者達が、祭り気分で乱入！</JapaneseText>
       <EnglishText>The hot-blooded young folks from the town burst in with their festival spirit!</EnglishText>
       <Notes>ステージ開始
-天の声・天の声：１
- | ステージ開始
  | 天の声・天の声：１</Notes>
       <SpeakerId>5</SpeakerId>
       <Id>6</Id>
@@ -184,8 +176,6 @@
       <JapaneseText>ウゼェな！　弱ェくせにカラんでくんじゃねェよ！</JapaneseText>
       <EnglishText>Goddamn annoyin'! Don't pick a fight with me if you're that damn weak!</EnglishText>
       <Notes>Iスパーダ編／ステージ途中１
-スパーダ・会話２：１
- | Iスパーダ編／ステージ途中１
  | スパーダ・会話２：１
  | Audio file: na/NA03_S101_D0010_020.na</Notes>
       <SpeakerId>0</SpeakerId>
@@ -208,8 +198,6 @@
       <JapaneseText>ごめんなさい！　ごめんなさい！</JapaneseText>
       <EnglishText>I'm sorry! I'm sorry!</EnglishText>
       <Notes>Iスパーダ編／ステージ途中１
-ルカ・会話２：３
- | Iスパーダ編／ステージ途中１
  | ルカ・会話２：３
  | Audio file: na/NA03_S101_D0030_019.na</Notes>
       <SpeakerId>2</SpeakerId>
@@ -232,8 +220,6 @@
       <JapaneseText>どういうコンビだよ、あれは</JapaneseText>
       <EnglishText>The heck kind of duo are they?</EnglishText>
       <Notes>Iスパーダ編／ステージ途中１
-エミルＲ・会話２：５
- | Iスパーダ編／ステージ途中１
  | エミルＲ・会話２：５
  | Audio file: na/NA03_S101_D0050_036.na</Notes>
       <SpeakerId>3</SpeakerId>
@@ -255,8 +241,6 @@
       <JapaneseText>チンピラなんか倒して、早く世界樹に向かおう、エミル！</JapaneseText>
       <EnglishText>Let's beat this delinquent and hurry onward to the World Tree!</EnglishText>
       <Notes>Iスパーダ編／ステージ途中２
-マルタ・会話３：１
- | Iスパーダ編／ステージ途中２
  | マルタ・会話３：１
  | Audio file: na/NA03_S101_E0010_022.na</Notes>
       <SpeakerId>1</SpeakerId>
@@ -279,8 +263,6 @@
       <JapaneseText>てめぇには関係ねぇだろ！　黙って俺にやられてろ！</JapaneseText>
       <EnglishText>This has nothin' to do with you! Shut your trap and let me knock you out already!</EnglishText>
       <Notes>Iスパーダ編／ステージ途中２
-エミルＲ・会話３：３
- | Iスパーダ編／ステージ途中２
  | エミルＲ・会話３：３
  | Audio file: na/NA03_S101_E0030_036.na</Notes>
       <SpeakerId>3</SpeakerId>
@@ -303,8 +285,6 @@
       <JapaneseText>こっちの方が話が早くてオレは好きだぜ！</JapaneseText>
       <EnglishText>I like it more that way, 'cause it gets this whole thing wrapped up faster!</EnglishText>
       <Notes>Iスパーダ編／ステージ途中２
-スパーダ・会話３：５
- | Iスパーダ編／ステージ途中２
  | スパーダ・会話３：５
  | Audio file: na/NA03_S101_E0050_020.na</Notes>
       <SpeakerId>0</SpeakerId>
@@ -326,8 +306,6 @@
       <JapaneseText>キミ、このチンピラに無理やり戦わされてるんでしょ？</JapaneseText>
       <EnglishText>You're being forced to fight with this delinquent against your will, aren't you?</EnglishText>
       <Notes>Iスパーダ編／ボス戦　ＶＳエミル・マルタ
-マルタ・会話４：１
- | Iスパーダ編／ボス戦　ＶＳエミル・マルタ
  | マルタ・会話４：１
  | Audio file: na/NA03_S101_F0010_022.na</Notes>
       <SpeakerId>1</SpeakerId>
@@ -350,8 +328,6 @@
       <JapaneseText>待っててね！　今チンピラを倒してキミを助けてあげるから</JapaneseText>
       <EnglishText>Just wait! I'll beat this delinquent right now and save you.</EnglishText>
       <Notes>Iスパーダ編／ボス戦　ＶＳエミル・マルタ
-マルタ・会話４：３
- | Iスパーダ編／ボス戦　ＶＳエミル・マルタ
  | マルタ・会話４：３
  | Audio file: na/NA03_S101_F0030_022.na</Notes>
       <SpeakerId>1</SpeakerId>
@@ -374,8 +350,6 @@
       <JapaneseText>僕は……僕は無理やり戦わされてなんかいない</JapaneseText>
       <EnglishText>I'm... I'm not being forced to fight.</EnglishText>
       <Notes>Iスパーダ編／ボス戦途中
-ルカ・会話５：１
- | Iスパーダ編／ボス戦途中
  | ルカ・会話５：１
  | Audio file: na/NA03_S101_G0010_019.na</Notes>
       <SpeakerId>2</SpeakerId>
@@ -397,7 +371,9 @@
       <PointerOffset/>
       <JapaneseText>へっ、言うじゃねぇか、ルカ。少しは見直したぜ</JapaneseText>
       <EnglishText>Heh, not bad, Ruca. I'll have to rethink my opinion of ya a bit.</EnglishText>
-      <Notes/>
+      <Notes>Iスパーダ編／ボス戦途中
+ | スパーダ・会話５：３
+ | Audio file: na/NA03_S101_G0030_020.na</Notes>
       <SpeakerId>0</SpeakerId>
       <Id>26</Id>
       <Status>Editing</Status>
@@ -418,8 +394,6 @@
       <JapaneseText>よくもエミルを！　もう許さないんだから！</JapaneseText>
       <EnglishText>How dare you do that to Emil! I'll never forgive you!</EnglishText>
       <Notes>Iスパーダ編／ボス戦　先にエミル撃破
-マルタ・会話６：１
- | Iスパーダ編／ボス戦　先にエミル撃破
  | マルタ・会話６：１
  | Audio file: na/NA03_S101_H0010_022.na</Notes>
       <SpeakerId>1</SpeakerId>
@@ -441,9 +415,7 @@
       <PointerOffset/>
       <JapaneseText>てめぇらもう容赦しねぇ！　叩きつぶしてやる！</JapaneseText>
       <EnglishText>I ain't showin' you any more mercy! I'm gonna wipe the floor with you!</EnglishText>
-      <Notes>Iスパーダ編／ボス戦　先にエミル撃破
-エミルＲ・会話７：２
- | Iスパーダ編／ボス戦　先にマルタ撃破
+      <Notes>Iスパーダ編／ボス戦　先にマルタ撃破
  | エミルＲ・会話７：２
  | Audio file: na/NA03_S101_I0020_036.na</Notes>
       <SpeakerId>3</SpeakerId>
@@ -465,9 +437,7 @@
       <PointerOffset/>
       <JapaneseText>誰がチンピラだぁ！？　誰がよぉ！</JapaneseText>
       <EnglishText>Who's the delinquent here?! Who is it, huh?!</EnglishText>
-      <Notes>Iスパーダ編／ボス戦　先にエミル撃破
-スパーダ・会話８：２
- | Iスパーダ編／ボス戦勝利
+      <Notes>Iスパーダ編／ボス戦勝利
  | スパーダ・会話８：２
  | Audio file: na/NA03_S101_J0020_020.na</Notes>
       <SpeakerId>0</SpeakerId>
@@ -490,8 +460,6 @@
       <JapaneseText>な〜んだ！　やっぱりチンピラって口ばっかりだね</JapaneseText>
       <EnglishText>What's thiiis?! Delinquents are nothing but talk after all, huh.</EnglishText>
       <Notes>Iスパーダ編／ボス戦敗北
-マルタ・会話９：１
- | Iスパーダ編／ボス戦敗北
  | マルタ・会話９：１
  | Audio file: na/NA03_S101_K0010_022.na</Notes>
       <SpeakerId>1</SpeakerId>
@@ -517,8 +485,6 @@
       <JapaneseText>３０秒以内に３５Ｋ．Ｏ．を決めろ！</JapaneseText>
       <EnglishText>Get 35 KOs in 30 seconds!</EnglishText>
       <Notes>ミッション１／開始
-ダイアログ・通達：１
- | ミッション１／開始
  | ダイアログ・通達：１</Notes>
       <SpeakerId>6</SpeakerId>
       <Id>36</Id>
@@ -539,8 +505,6 @@
       <JapaneseText>先へ進め！</JapaneseText>
       <EnglishText>Proceed onward!</EnglishText>
       <Notes>ミッション１／失敗
-ダイアログ・通達：３
- | ミッション１／失敗
  | ダイアログ・通達：３</Notes>
       <SpeakerId>8</SpeakerId>
       <Id>38</Id>
