@@ -19,7 +19,7 @@
       <Notes>Audio file: na/NA04_400_301.na</Notes>
       <SpeakerId>0</SpeakerId>
       <Id>0</Id>
-      <Status>Editing</Status>
+      <Status>Proofreading</Status>
     </Entry>
     <Entry>
       <PointerOffset/>
@@ -28,7 +28,7 @@
       <Notes>Audio file: na/NA04_401_301.na</Notes>
       <SpeakerId>0</SpeakerId>
       <Id>1</Id>
-      <Status>Editing</Status>
+      <Status>Proofreading</Status>
     </Entry>
     <Entry>
       <PointerOffset/>
@@ -37,16 +37,16 @@
       <Notes>Audio file: na/NA04_402_301.na</Notes>
       <SpeakerId>0</SpeakerId>
       <Id>2</Id>
-      <Status>Editing</Status>
+      <Status>Proofreading</Status>
     </Entry>
     <Entry>
       <PointerOffset/>
       <JapaneseText>俺らの悪行にマジになっちゃってどーすんのよ？</JapaneseText>
-      <EnglishText>Why're you takin' our wrong-doings so seriously?</EnglishText>
+      <EnglishText>Why're you takin' our misdeeds so seriously?</EnglishText>
       <Notes>Audio file: na/NA04_403_301.na</Notes>
       <SpeakerId>0</SpeakerId>
       <Id>3</Id>
-      <Status>Editing</Status>
+      <Status>Proofreading</Status>
     </Entry>
     <Entry>
       <PointerOffset/>
@@ -55,7 +55,7 @@
       <Notes>Audio file: na/NA04_404_301.na</Notes>
       <SpeakerId>0</SpeakerId>
       <Id>4</Id>
-      <Status>Editing</Status>
+      <Status>Proofreading</Status>
     </Entry>
     <Entry>
       <PointerOffset/>
@@ -64,7 +64,7 @@
       <Notes>Audio file: na/NA04_405_301.na</Notes>
       <SpeakerId>0</SpeakerId>
       <Id>5</Id>
-      <Status>Editing</Status>
+      <Status>Proofreading</Status>
     </Entry>
     <Entry>
       <PointerOffset/>
@@ -73,7 +73,7 @@
       <Notes>Audio file: na/NA04_406_301.na</Notes>
       <SpeakerId>0</SpeakerId>
       <Id>6</Id>
-      <Status>Editing</Status>
+      <Status>Proofreading</Status>
     </Entry>
     <Entry>
       <PointerOffset/>
@@ -82,7 +82,7 @@
       <Notes>Audio file: na/NA04_407_301.na</Notes>
       <SpeakerId>0</SpeakerId>
       <Id>7</Id>
-      <Status>Editing</Status>
+      <Status>Proofreading</Status>
     </Entry>
     <Entry>
       <PointerOffset/>
@@ -91,7 +91,7 @@
       <Notes>Audio file: na/NA04_408_301.na</Notes>
       <SpeakerId>0</SpeakerId>
       <Id>8</Id>
-      <Status>Editing</Status>
+      <Status>Proofreading</Status>
     </Entry>
     <Entry>
       <PointerOffset/>
@@ -100,7 +100,7 @@
       <Notes>Audio file: na/NA04_409_301.na</Notes>
       <SpeakerId>0</SpeakerId>
       <Id>9</Id>
-      <Status>Editing</Status>
+      <Status>Proofreading</Status>
     </Entry>
     <Entry>
       <PointerOffset/>
@@ -109,16 +109,16 @@
       <Notes>Audio file: na/NA04_410_301.na</Notes>
       <SpeakerId>0</SpeakerId>
       <Id>10</Id>
-      <Status>Editing</Status>
+      <Status>Proofreading</Status>
     </Entry>
     <Entry>
       <PointerOffset/>
       <JapaneseText>何か楽しくなってきたぜ！　うひょー！</JapaneseText>
-      <EnglishText>This is gettin' kinda fun! Heck yeeeeah!</EnglishText>
+      <EnglishText>This is gettin' kinda fun! Hell yeeeeah!</EnglishText>
       <Notes>Audio file: na/NA04_411_301.na</Notes>
       <SpeakerId>0</SpeakerId>
       <Id>11</Id>
-      <Status>Editing</Status>
+      <Status>Proofreading</Status>
     </Entry>
     <Entry>
       <PointerOffset/>
@@ -127,16 +127,18 @@
       <Notes>Audio file: na/NA04_412_301.na</Notes>
       <SpeakerId>0</SpeakerId>
       <Id>12</Id>
-      <Status>Editing</Status>
+      <Status>Proofreading</Status>
     </Entry>
     <Entry>
       <PointerOffset/>
       <JapaneseText>ううぅ、足がすくむぜ…</JapaneseText>
       <EnglishText>Ugh, my legs are all frozen up...</EnglishText>
-      <Notes>Audio file: na/NA04_413_301.na</Notes>
+      <Notes>Needs context.
+
+Audio file: na/NA04_413_301.na</Notes>
       <SpeakerId>0</SpeakerId>
       <Id>13</Id>
-      <Status>Editing</Status>
+      <Status>Proofreading</Status>
     </Entry>
     <Entry>
       <PointerOffset/>
@@ -145,16 +147,16 @@
       <Notes>Audio file: na/NA04_414_301.na</Notes>
       <SpeakerId>0</SpeakerId>
       <Id>14</Id>
-      <Status>Editing</Status>
+      <Status>Proofreading</Status>
     </Entry>
     <Entry>
       <PointerOffset/>
       <JapaneseText>ドサクサに紛れて俺は逃げるぜ！</JapaneseText>
-      <EnglishText>Gonna use my luck with this bustle and get outta here!</EnglishText>
+      <EnglishText>Gonna take advantage of the chaos and get outta here!</EnglishText>
       <Notes>Audio file: na/NA04_415_301.na</Notes>
       <SpeakerId>0</SpeakerId>
       <Id>15</Id>
-      <Status>Editing</Status>
+      <Status>Proofreading</Status>
     </Entry>
     <Entry>
       <PointerOffset/>
@@ -163,7 +165,7 @@
       <Notes>Audio file: na/NA04_416_301.na</Notes>
       <SpeakerId>0</SpeakerId>
       <Id>16</Id>
-      <Status>Editing</Status>
+      <Status>Proofreading</Status>
     </Entry>
     <Entry>
       <PointerOffset/>
@@ -172,7 +174,7 @@
       <Notes>Audio file: na/NA04_417_301.na</Notes>
       <SpeakerId>0</SpeakerId>
       <Id>17</Id>
-      <Status>Editing</Status>
+      <Status>Proofreading</Status>
     </Entry>
     <Entry>
       <PointerOffset/>
@@ -181,34 +183,34 @@
       <Notes>Audio file: na/NA04_418_301.na</Notes>
       <SpeakerId>0</SpeakerId>
       <Id>18</Id>
-      <Status>Editing</Status>
+      <Status>Proofreading</Status>
     </Entry>
     <Entry>
       <PointerOffset/>
       <JapaneseText>邪魔するならブッ潰す！　邪魔しなくてもブッ潰す！</JapaneseText>
-      <EnglishText>Get in my and I'll crush ya! Even if you don't get in my way, I'm gonna crush ya!</EnglishText>
+      <EnglishText>Get in my way and I'll crush ya! Even if ya don't get in my way, I'm gonna crush ya!</EnglishText>
       <Notes>Audio file: na/NA04_419_301.na</Notes>
       <SpeakerId>0</SpeakerId>
       <Id>19</Id>
-      <Status>Editing</Status>
+      <Status>Proofreading</Status>
     </Entry>
     <Entry>
       <PointerOffset/>
       <JapaneseText>強ぇ…ボコられてんのに、憧れちまうぜ</JapaneseText>
-      <EnglishText>So strong... Even through they're gettin' whooped, I gotta admire 'em.</EnglishText>
+      <EnglishText>So strong... Even though I'm gettin' whooped, I gotta admire 'em.</EnglishText>
       <Notes>Audio file: na/NA04_420_301.na</Notes>
       <SpeakerId>0</SpeakerId>
       <Id>20</Id>
-      <Status>Editing</Status>
+      <Status>Proofreading</Status>
     </Entry>
     <Entry>
       <PointerOffset/>
       <JapaneseText>俺らは負けねぇ！　そこんとこヨロシク！</JapaneseText>
-      <EnglishText>We won't lose! That said, best regards to ya!</EnglishText>
+      <EnglishText>We won't lose! That said, good luck to ya!</EnglishText>
       <Notes>Audio file: na/NA04_421_301.na</Notes>
       <SpeakerId>0</SpeakerId>
       <Id>21</Id>
-      <Status>Editing</Status>
+      <Status>Proofreading</Status>
     </Entry>
     <Entry>
       <PointerOffset/>
@@ -217,43 +219,43 @@
       <Notes>Audio file: na/NA04_422_301.na</Notes>
       <SpeakerId>0</SpeakerId>
       <Id>22</Id>
-      <Status>Editing</Status>
+      <Status>Proofreading</Status>
     </Entry>
     <Entry>
       <PointerOffset/>
       <JapaneseText>お前らなんか大嫌いだ！　ろくなもんじゃねぇ！</JapaneseText>
-      <EnglishText>I hate you people! You good-for-nothings!</EnglishText>
+      <EnglishText>I hate you people! You lowlives!</EnglishText>
       <Notes>Audio file: na/NA04_423_301.na</Notes>
       <SpeakerId>0</SpeakerId>
       <Id>23</Id>
-      <Status>Editing</Status>
+      <Status>Proofreading</Status>
     </Entry>
     <Entry>
       <PointerOffset/>
       <JapaneseText>金目のもんを置いて行けー！</JapaneseText>
-      <EnglishText>Leave your valuable behind!</EnglishText>
+      <EnglishText>Leave your valuables behind!</EnglishText>
       <Notes>Audio file: na/NA04_424_301.na</Notes>
       <SpeakerId>0</SpeakerId>
       <Id>24</Id>
-      <Status>Editing</Status>
+      <Status>Proofreading</Status>
     </Entry>
     <Entry>
       <PointerOffset/>
       <JapaneseText>俺らと出会った不幸を呪いやがれ！</JapaneseText>
-      <EnglishText>Curse your misfortunate in meeting us!</EnglishText>
+      <EnglishText>Curse your own misfortune that you ran into us!</EnglishText>
       <Notes>Audio file: na/NA04_425_301.na</Notes>
       <SpeakerId>0</SpeakerId>
       <Id>25</Id>
-      <Status>Editing</Status>
+      <Status>Proofreading</Status>
     </Entry>
     <Entry>
       <PointerOffset/>
       <JapaneseText>イイ加減に潰れろ！</JapaneseText>
-      <EnglishText>Just get beaten up already!</EnglishText>
+      <EnglishText>Just get beat up already!</EnglishText>
       <Notes>Audio file: na/NA04_426_301.na</Notes>
       <SpeakerId>0</SpeakerId>
       <Id>26</Id>
-      <Status>Editing</Status>
+      <Status>Proofreading</Status>
     </Entry>
     <Entry>
       <PointerOffset/>
@@ -262,16 +264,16 @@
       <Notes>Audio file: na/NA04_427_301.na</Notes>
       <SpeakerId>0</SpeakerId>
       <Id>27</Id>
-      <Status>Editing</Status>
+      <Status>Proofreading</Status>
     </Entry>
     <Entry>
       <PointerOffset/>
       <JapaneseText>俺達ァ健康優良犯罪集団だぜ！！</JapaneseText>
-      <EnglishText>We're a healthy, superior crime group!</EnglishText>
+      <EnglishText>We're a physically fit, superior gang!</EnglishText>
       <Notes>Audio file: na/NA04_428_301.na</Notes>
       <SpeakerId>0</SpeakerId>
       <Id>28</Id>
-      <Status>Editing</Status>
+      <Status>Proofreading</Status>
     </Entry>
     <Entry>
       <PointerOffset/>
@@ -280,7 +282,7 @@
       <Notes>Audio file: na/NA04_429_301.na</Notes>
       <SpeakerId>0</SpeakerId>
       <Id>29</Id>
-      <Status>Editing</Status>
+      <Status>Proofreading</Status>
     </Entry>
     <Entry>
       <PointerOffset/>
@@ -289,16 +291,16 @@
       <Notes>Audio file: na/NA04_430_301.na</Notes>
       <SpeakerId>0</SpeakerId>
       <Id>30</Id>
-      <Status>Editing</Status>
+      <Status>Proofreading</Status>
     </Entry>
     <Entry>
       <PointerOffset/>
       <JapaneseText>数だ！　数で押し切るしかねぇ！</JapaneseText>
-      <EnglishText>Get 'em in numbers! We gotta overcome 'em with sheer numbers!</EnglishText>
+      <EnglishText>Use numbers! We gotta overcome 'em with sheer numbers!</EnglishText>
       <Notes>Audio file: na/NA04_431_301.na</Notes>
       <SpeakerId>0</SpeakerId>
       <Id>31</Id>
-      <Status>Editing</Status>
+      <Status>Proofreading</Status>
     </Entry>
     <Entry>
       <PointerOffset/>
@@ -307,7 +309,7 @@
       <Notes>Audio file: na/NA04_432_301.na</Notes>
       <SpeakerId>0</SpeakerId>
       <Id>32</Id>
-      <Status>Editing</Status>
+      <Status>Proofreading</Status>
     </Entry>
   </Strings>
 </SceneText>

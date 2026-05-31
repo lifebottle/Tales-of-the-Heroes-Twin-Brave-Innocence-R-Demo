@@ -88,22 +88,22 @@
     <Entry>
       <PointerOffset/>
       <JapaneseText>女だからって手加減はしねぇぞ</JapaneseText>
-      <EnglishText>I ain't goin' easy on you just 'cause' you're a woman.</EnglishText>
+      <EnglishText>I ain't goin' easy on ya just 'cause you're a woman.</EnglishText>
       <Notes/>
       <SpeakerId>0</SpeakerId>
       <Id>0</Id>
-      <Status>Editing</Status>
+      <Status>Proofreading</Status>
     </Entry>
     <Entry>
       <PointerOffset/>
       <JapaneseText>そっちこそ！　怪我しても恨まないでよね、チンピラさん</JapaneseText>
-      <EnglishText>Right back at you! Don't old a grudge against me if you get hurt, mister delinquent.</EnglishText>
+      <EnglishText>Right back at you! Don't hold a grudge against me if you get hurt, mister delinquent.</EnglishText>
       <Notes>Iスパーダ編／ステージ開始
  | マルタ・会話１：２
  | Audio file: na/NA03_S101_C0020_022.na</Notes>
       <SpeakerId>1</SpeakerId>
       <Id>1</Id>
-      <Status>Editing</Status>
+      <Status>Proofreading</Status>
     </Entry>
     <Entry>
       <PointerOffset/>
@@ -114,7 +114,7 @@
  | Audio file: na/NA03_S101_C0030_019.na</Notes>
       <SpeakerId>2</SpeakerId>
       <Id>2</Id>
-      <Status>Editing</Status>
+      <Status>Proofreading</Status>
     </Entry>
     <Entry>
       <PointerOffset/>
@@ -125,7 +125,7 @@
  | Audio file: na/NA03_S101_C0040_036.na</Notes>
       <SpeakerId>3</SpeakerId>
       <Id>3</Id>
-      <Status>Editing</Status>
+      <Status>Proofreading</Status>
     </Entry>
     <Entry>
       <PointerOffset/>
@@ -136,7 +136,7 @@
  | Audio file: na/NA03_S101_C0050_019.na</Notes>
       <SpeakerId>2</SpeakerId>
       <Id>4</Id>
-      <Status>Editing</Status>
+      <Status>Proofreading</Status>
     </Entry>
     <Entry>
       <PointerOffset/>
@@ -147,17 +147,17 @@
  | Audio file: na/NA03_S101_C0060_114.na</Notes>
       <SpeakerId>4</SpeakerId>
       <Id>5</Id>
-      <Status>Editing</Status>
+      <Status>Proofreading</Status>
     </Entry>
     <Entry>
       <PointerOffset/>
       <JapaneseText>血気盛んな街の若者達が、祭り気分で乱入！</JapaneseText>
-      <EnglishText>The hot-blooded young folks from the town burst in with their festival spirit!</EnglishText>
+      <EnglishText>The hot-blooded young folks from the town burst in with their festive spirit!</EnglishText>
       <Notes>ステージ開始
  | 天の声・天の声：１</Notes>
       <SpeakerId>5</SpeakerId>
       <Id>6</Id>
-      <Status>Editing</Status>
+      <Status>Proofreading</Status>
     </Entry>
     <Entry>
       <PointerOffset/>
@@ -167,7 +167,7 @@
  | 天の声・天の声：２</Notes>
       <SpeakerId>5</SpeakerId>
       <Id>7</Id>
-      <Status>Editing</Status>
+      <Status>Proofreading</Status>
     </Entry>
     <Entry>
       <PointerOffset/>
@@ -178,7 +178,7 @@
  | Audio file: na/NA03_S101_D0010_020.na</Notes>
       <SpeakerId>0</SpeakerId>
       <Id>8</Id>
-      <Status>Editing</Status>
+      <Status>Proofreading</Status>
     </Entry>
     <Entry>
       <PointerOffset/>
@@ -189,7 +189,7 @@
  | Audio file: na/NA03_S101_D0020_019.na</Notes>
       <SpeakerId>2</SpeakerId>
       <Id>9</Id>
-      <Status>Editing</Status>
+      <Status>Proofreading</Status>
     </Entry>
     <Entry>
       <PointerOffset/>
@@ -200,7 +200,7 @@
  | Audio file: na/NA03_S101_D0030_019.na</Notes>
       <SpeakerId>2</SpeakerId>
       <Id>10</Id>
-      <Status>Editing</Status>
+      <Status>Proofreading</Status>
     </Entry>
     <Entry>
       <PointerOffset/>
@@ -211,7 +211,7 @@
  | Audio file: na/NA03_S101_D0040_020.na</Notes>
       <SpeakerId>0</SpeakerId>
       <Id>11</Id>
-      <Status>Editing</Status>
+      <Status>Proofreading</Status>
     </Entry>
     <Entry>
       <PointerOffset/>
@@ -222,28 +222,28 @@
  | Audio file: na/NA03_S101_D0050_036.na</Notes>
       <SpeakerId>3</SpeakerId>
       <Id>12</Id>
-      <Status>Editing</Status>
+      <Status>Proofreading</Status>
     </Entry>
     <Entry>
       <PointerOffset/>
       <JapaneseText>エミル、先陣を切って戦闘に出撃！</JapaneseText>
-      <EnglishText>Emil leads the charge and sorties for battle!</EnglishText>
+      <EnglishText>Emil leads the charge and sorties into battle!</EnglishText>
       <Notes>Iスパーダ編／ステージ途中１
  | 天の声・天の声：３</Notes>
       <SpeakerId>5</SpeakerId>
       <Id>13</Id>
-      <Status>Editing</Status>
+      <Status>Proofreading</Status>
     </Entry>
     <Entry>
       <PointerOffset/>
       <JapaneseText>チンピラなんか倒して、早く世界樹に向かおう、エミル！</JapaneseText>
-      <EnglishText>Let's beat this delinquent and hurry onward to the World Tree!</EnglishText>
+      <EnglishText>Let's beat this delinquent and hurry on to the World Tree!</EnglishText>
       <Notes>Iスパーダ編／ステージ途中２
  | マルタ・会話３：１
  | Audio file: na/NA03_S101_E0010_022.na</Notes>
       <SpeakerId>1</SpeakerId>
       <Id>14</Id>
-      <Status>Editing</Status>
+      <Status>Proofreading</Status>
     </Entry>
     <Entry>
       <PointerOffset/>
@@ -254,7 +254,7 @@
  | Audio file: na/NA03_S101_E0020_019.na</Notes>
       <SpeakerId>2</SpeakerId>
       <Id>15</Id>
-      <Status>Editing</Status>
+      <Status>Proofreading</Status>
     </Entry>
     <Entry>
       <PointerOffset/>
@@ -265,7 +265,7 @@
  | Audio file: na/NA03_S101_E0030_036.na</Notes>
       <SpeakerId>3</SpeakerId>
       <Id>16</Id>
-      <Status>Editing</Status>
+      <Status>Proofreading</Status>
     </Entry>
     <Entry>
       <PointerOffset/>
@@ -276,7 +276,7 @@
  | Audio file: na/NA03_S101_E0040_020.na</Notes>
       <SpeakerId>0</SpeakerId>
       <Id>17</Id>
-      <Status>Editing</Status>
+      <Status>Proofreading</Status>
     </Entry>
     <Entry>
       <PointerOffset/>
@@ -287,7 +287,7 @@
  | Audio file: na/NA03_S101_E0050_020.na</Notes>
       <SpeakerId>0</SpeakerId>
       <Id>18</Id>
-      <Status>Editing</Status>
+      <Status>Proofreading</Status>
     </Entry>
     <Entry>
       <PointerOffset/>
@@ -297,7 +297,7 @@
  | 天の声・天の声：４</Notes>
       <SpeakerId>5</SpeakerId>
       <Id>19</Id>
-      <Status>Editing</Status>
+      <Status>Proofreading</Status>
     </Entry>
     <Entry>
       <PointerOffset/>
@@ -308,7 +308,7 @@
  | Audio file: na/NA03_S101_F0010_022.na</Notes>
       <SpeakerId>1</SpeakerId>
       <Id>20</Id>
-      <Status>Editing</Status>
+      <Status>Proofreading</Status>
     </Entry>
     <Entry>
       <PointerOffset/>
@@ -319,7 +319,7 @@
  | Audio file: na/NA03_S101_F0020_019.na</Notes>
       <SpeakerId>2</SpeakerId>
       <Id>21</Id>
-      <Status>Editing</Status>
+      <Status>Proofreading</Status>
     </Entry>
     <Entry>
       <PointerOffset/>
@@ -330,7 +330,7 @@
  | Audio file: na/NA03_S101_F0030_022.na</Notes>
       <SpeakerId>1</SpeakerId>
       <Id>22</Id>
-      <Status>Editing</Status>
+      <Status>Proofreading</Status>
     </Entry>
     <Entry>
       <PointerOffset/>
@@ -341,7 +341,7 @@
  | Audio file: na/NA03_S101_F0040_020.na</Notes>
       <SpeakerId>0</SpeakerId>
       <Id>23</Id>
-      <Status>Editing</Status>
+      <Status>Proofreading</Status>
     </Entry>
     <Entry>
       <PointerOffset/>
@@ -352,7 +352,7 @@
  | Audio file: na/NA03_S101_G0010_019.na</Notes>
       <SpeakerId>2</SpeakerId>
       <Id>24</Id>
-      <Status>Editing</Status>
+      <Status>Proofreading</Status>
     </Entry>
     <Entry>
       <PointerOffset/>
@@ -363,7 +363,7 @@
  | Audio file: na/NA03_S101_G0020_019.na</Notes>
       <SpeakerId>2</SpeakerId>
       <Id>25</Id>
-      <Status>Editing</Status>
+      <Status>Proofreading</Status>
     </Entry>
     <Entry>
       <PointerOffset/>
@@ -374,7 +374,7 @@
  | Audio file: na/NA03_S101_G0030_020.na</Notes>
       <SpeakerId>0</SpeakerId>
       <Id>26</Id>
-      <Status>Editing</Status>
+      <Status>Proofreading</Status>
     </Entry>
     <Entry>
       <PointerOffset/>
@@ -385,7 +385,7 @@
  | Audio file: na/NA03_S101_G0040_036.na</Notes>
       <SpeakerId>3</SpeakerId>
       <Id>27</Id>
-      <Status>Editing</Status>
+      <Status>Proofreading</Status>
     </Entry>
     <Entry>
       <PointerOffset/>
@@ -396,7 +396,7 @@
  | Audio file: na/NA03_S101_H0010_022.na</Notes>
       <SpeakerId>1</SpeakerId>
       <Id>28</Id>
-      <Status>Editing</Status>
+      <Status>Proofreading</Status>
     </Entry>
     <Entry>
       <PointerOffset/>
@@ -407,7 +407,7 @@
  | Audio file: na/NA03_S101_I0010_036.na</Notes>
       <SpeakerId>3</SpeakerId>
       <Id>29</Id>
-      <Status>Editing</Status>
+      <Status>Proofreading</Status>
     </Entry>
     <Entry>
       <PointerOffset/>
@@ -418,7 +418,7 @@
  | Audio file: na/NA03_S101_I0020_036.na</Notes>
       <SpeakerId>3</SpeakerId>
       <Id>30</Id>
-      <Status>Editing</Status>
+      <Status>Proofreading</Status>
     </Entry>
     <Entry>
       <PointerOffset/>
@@ -429,7 +429,7 @@
  | Audio file: na/NA03_S101_J0010_022.na</Notes>
       <SpeakerId>1</SpeakerId>
       <Id>31</Id>
-      <Status>Editing</Status>
+      <Status>Proofreading</Status>
     </Entry>
     <Entry>
       <PointerOffset/>
@@ -440,7 +440,7 @@
  | Audio file: na/NA03_S101_J0020_020.na</Notes>
       <SpeakerId>0</SpeakerId>
       <Id>32</Id>
-      <Status>Editing</Status>
+      <Status>Proofreading</Status>
     </Entry>
     <Entry>
       <PointerOffset/>
@@ -451,7 +451,7 @@
  | Audio file: na/NA03_S101_J0030_019.na</Notes>
       <SpeakerId>2</SpeakerId>
       <Id>33</Id>
-      <Status>Editing</Status>
+      <Status>Proofreading</Status>
     </Entry>
     <Entry>
       <PointerOffset/>
@@ -462,18 +462,18 @@
  | Audio file: na/NA03_S101_K0010_022.na</Notes>
       <SpeakerId>1</SpeakerId>
       <Id>34</Id>
-      <Status>Editing</Status>
+      <Status>Proofreading</Status>
     </Entry>
     <Entry>
       <PointerOffset/>
       <JapaneseText>テメェ……マジ覚えとけよ</JapaneseText>
-      <EnglishText>Damn you... You seriously better remember this.</EnglishText>
+      <EnglishText>Damn you... I'm seriously gonna remember this.</EnglishText>
       <Notes>Iスパーダ編／ボス戦敗北
  | スパーダ・会話９：２
  | Audio file: na/NA03_S101_K0020_020.na</Notes>
       <SpeakerId>0</SpeakerId>
       <Id>35</Id>
-      <Status>Editing</Status>
+      <Status>Proofreading</Status>
     </Entry>
   </Strings>
   <Strings>
@@ -486,7 +486,7 @@
  | ダイアログ・通達：１</Notes>
       <SpeakerId>6</SpeakerId>
       <Id>36</Id>
-      <Status>Editing</Status>
+      <Status>Proofreading</Status>
     </Entry>
     <Entry>
       <PointerOffset/>
@@ -496,7 +496,7 @@
  | ダイアログ・通達：２</Notes>
       <SpeakerId>7</SpeakerId>
       <Id>37</Id>
-      <Status>Editing</Status>
+      <Status>Proofreading</Status>
     </Entry>
     <Entry>
       <PointerOffset/>
@@ -506,7 +506,7 @@
  | ダイアログ・通達：３</Notes>
       <SpeakerId>8</SpeakerId>
       <Id>38</Id>
-      <Status>Editing</Status>
+      <Status>Proofreading</Status>
     </Entry>
     <Entry>
       <PointerOffset/>
@@ -516,7 +516,7 @@
  | ダイアログ・通達：４</Notes>
       <SpeakerId>9</SpeakerId>
       <Id>39</Id>
-      <Status>Editing</Status>
+      <Status>Proofreading</Status>
     </Entry>
   </Strings>
 </SceneText>

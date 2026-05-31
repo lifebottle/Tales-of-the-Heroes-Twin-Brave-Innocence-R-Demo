@@ -41,23 +41,24 @@
       <JapaneseText>おいテメェら、思い知ったか！
 調子づいてんじゃねェぞ！
 これは俺達の舞台だ！</JapaneseText>
-      <EnglishText>Hey, you guys, you get it now?!
-Don't get in over your heads!
+      <EnglishText>Hey, assholes, ya get it now?!
+Don't be so full o' yourselves!
 This is our stage!</EnglishText>
       <Notes/>
       <SpeakerId>21</SpeakerId>
       <Id>1</Id>
-      <Status>Editing</Status>
+      <Status>Proofreading</Status>
     </Entry>
     <Entry>
       <PointerOffset/>
       <JapaneseText>ちょ、ちょっとスパーダ、
 僕達だけのってワケじゃ…</JapaneseText>
-      <EnglishText>W-Wait a second, Spada, it's not just ours...</EnglishText>
+      <EnglishText>W-Wait a second, Spada,
+it's not just ours...</EnglishText>
       <Notes/>
       <SpeakerId>20</SpeakerId>
       <Id>2</Id>
-      <Status>Editing</Status>
+      <Status>Proofreading</Status>
     </Entry>
     <Entry>
       <PointerOffset/>
@@ -66,18 +67,18 @@ This is our stage!</EnglishText>
       <Notes>Will edit this depending on how the acting is, because that will tell me if this is "yeah" or Ahhh" like "ah man".</Notes>
       <SpeakerId>24</SpeakerId>
       <Id>3</Id>
-      <Status>Editing</Status>
+      <Status>Proofreading</Status>
     </Entry>
     <Entry>
       <PointerOffset/>
       <JapaneseText>ああ、息があった二人ならではの
 見事な戦いだった</JapaneseText>
-      <EnglishText>Yeah, it was a magnificent battle
+      <EnglishText>Yeah. It was a magnificent battle
 with the two of you being so in sync.</EnglishText>
       <Notes/>
       <SpeakerId>25</SpeakerId>
       <Id>4</Id>
-      <Status>Editing</Status>
+      <Status>Proofreading</Status>
     </Entry>
     <Entry>
       <PointerOffset/>
@@ -86,30 +87,32 @@ with the two of you being so in sync.</EnglishText>
       <Notes/>
       <SpeakerId>20</SpeakerId>
       <Id>5</Id>
-      <Status>Editing</Status>
+      <Status>Proofreading</Status>
     </Entry>
     <Entry>
       <PointerOffset/>
       <JapaneseText>ここでの戦いは、共に戦う仲間との絆が
 これまで以上に大切になるんだ</JapaneseText>
-      <EnglishText>Our bonds from fighting together in this battle
-will be even more valuable going forward.</EnglishText>
+      <EnglishText>Our bonds from fighting together
+in this battle will be even more
+valuable going forward.</EnglishText>
       <Notes/>
       <SpeakerId>25</SpeakerId>
       <Id>6</Id>
-      <Status>Editing</Status>
+      <Status>Proofreading</Status>
     </Entry>
     <Entry>
       <PointerOffset/>
       <JapaneseText>敵の数が多いし、一息つく余裕もないからな。
 背中をまかせられる奴がいねぇと、辛いぜ？</JapaneseText>
-      <EnglishText>There're tons of enemies, so we don't get
-any pause. It's rough when you don't have
-someone to watch your back, you know?</EnglishText>
+      <EnglishText>There're tons of enemies, so we
+don't get any room to breathe. It's
+rough when you don't have someone
+to watch your back, you know?</EnglishText>
       <Notes/>
       <SpeakerId>24</SpeakerId>
       <Id>7</Id>
-      <Status>Editing</Status>
+      <Status>Proofreading</Status>
     </Entry>
     <Entry>
       <PointerOffset/>
@@ -120,18 +123,19 @@ grateful I could partner with you.</EnglishText>
       <Notes/>
       <SpeakerId>25</SpeakerId>
       <Id>8</Id>
-      <Status>Editing</Status>
+      <Status>Proofreading</Status>
     </Entry>
     <Entry>
       <PointerOffset/>
       <JapaneseText>そりゃお互い様だ。
 だが、今回はこいつらに遅れをとっちまったな</JapaneseText>
       <EnglishText>The feeling's mutual.
-But we did lag behind these guys this time.</EnglishText>
+But we did lag behind
+these guys this time.</EnglishText>
       <Notes/>
       <SpeakerId>24</SpeakerId>
       <Id>9</Id>
-      <Status>Editing</Status>
+      <Status>Proofreading</Status>
     </Entry>
     <Entry>
       <PointerOffset/>
@@ -143,7 +147,7 @@ start training right away.</EnglishText>
       <Notes/>
       <SpeakerId>25</SpeakerId>
       <Id>10</Id>
-      <Status>Editing</Status>
+      <Status>Proofreading</Status>
     </Entry>
     <Entry>
       <PointerOffset/>
@@ -152,16 +156,16 @@ start training right away.</EnglishText>
       <Notes/>
       <SpeakerId>24</SpeakerId>
       <Id>11</Id>
-      <Status>Editing</Status>
+      <Status>Proofreading</Status>
     </Entry>
     <Entry>
       <PointerOffset/>
       <JapaneseText>僕達も彼らに負けてられないからね</JapaneseText>
-      <EnglishText>Like them, we can't lose either.</EnglishText>
+      <EnglishText>Like them, we can't let ourselves lose either.</EnglishText>
       <Notes/>
       <SpeakerId>25</SpeakerId>
       <Id>12</Id>
-      <Status>Editing</Status>
+      <Status>Proofreading</Status>
     </Entry>
     <Entry>
       <PointerOffset/>
@@ -174,7 +178,7 @@ get our synchronization back in order.</EnglishText>
       <Notes/>
       <SpeakerId>24</SpeakerId>
       <Id>13</Id>
-      <Status>Editing</Status>
+      <Status>Proofreading</Status>
     </Entry>
     <Entry>
       <PointerOffset/>
@@ -182,11 +186,11 @@ get our synchronization back in order.</EnglishText>
 それに、まだ本番までは時間もあるようだしね</JapaneseText>
       <EnglishText>Don't worry, we'll get it back in order
 right away. Plus, we seem to have
-sufficient time before the real matches.</EnglishText>
+sufficient time before the real battles.</EnglishText>
       <Notes/>
       <SpeakerId>25</SpeakerId>
       <Id>14</Id>
-      <Status>Editing</Status>
+      <Status>Proofreading</Status>
     </Entry>
     <Entry>
       <PointerOffset/>
@@ -195,17 +199,17 @@ sufficient time before the real matches.</EnglishText>
       <Notes/>
       <SpeakerId>20</SpeakerId>
       <Id>15</Id>
-      <Status>Editing</Status>
+      <Status>Proofreading</Status>
     </Entry>
     <Entry>
       <PointerOffset/>
       <JapaneseText>そーだよ。最初っから紹介だって言ってんだろ</JapaneseText>
-      <EnglishText>Yeeeeah, we do. I told you from the beginnin'
+      <EnglishText>Yeeeeah, we do. I told ya from the beginnin'
 that this was an introduction, didn't I?</EnglishText>
       <Notes/>
       <SpeakerId>21</SpeakerId>
       <Id>16</Id>
-      <Status>Editing</Status>
+      <Status>Proofreading</Status>
     </Entry>
     <Entry>
       <PointerOffset/>
@@ -214,7 +218,7 @@ that this was an introduction, didn't I?</EnglishText>
       <Notes/>
       <SpeakerId>24</SpeakerId>
       <Id>17</Id>
-      <Status>Editing</Status>
+      <Status>Proofreading</Status>
     </Entry>
     <Entry>
       <PointerOffset/>
@@ -224,7 +228,7 @@ But well, I look forward to it.</EnglishText>
       <Notes/>
       <SpeakerId>21</SpeakerId>
       <Id>18</Id>
-      <Status>Editing</Status>
+      <Status>Proofreading</Status>
     </Entry>
     <Entry>
       <PointerOffset/>
@@ -232,21 +236,22 @@ But well, I look forward to it.</EnglishText>
 それじゃあユーリ、
 今から軽く腕慣らしでもどうだい？</JapaneseText>
       <EnglishText>I'm grateful for that.
-Alright then, Yuri. How about we
-maybe get to some light warm-ups now?</EnglishText>
+Alright then, Yuri. Perhaps we can
+do some light warm-ups now?</EnglishText>
       <Notes/>
       <SpeakerId>25</SpeakerId>
       <Id>19</Id>
-      <Status>Editing</Status>
+      <Status>Proofreading</Status>
     </Entry>
     <Entry>
       <PointerOffset/>
       <JapaneseText>いいぜ、期待を裏切るわけにはいかねぇからな</JapaneseText>
-      <EnglishText>Oh yeah. I won't be betraying your expectations.</EnglishText>
+      <EnglishText>Oh yeah. I won't be betraying
+your expectations.</EnglishText>
       <Notes>Need to hear how Yuri says "いいぜ". Sometimes he has a really sorta like, "all in" type of voice? If he just says it really "normally" (?), I plan to change it to "sure". Can maybe find something else to change it to if he has That Voice, but I couldn't think of anything strong enough.</Notes>
       <SpeakerId>24</SpeakerId>
       <Id>20</Id>
-      <Status>Editing</Status>
+      <Status>Proofreading</Status>
     </Entry>
     <Entry>
       <PointerOffset/>
@@ -255,7 +260,7 @@ maybe get to some light warm-ups now?</EnglishText>
       <Notes/>
       <SpeakerId>20</SpeakerId>
       <Id>21</Id>
-      <Status>Editing</Status>
+      <Status>Proofreading</Status>
     </Entry>
     <Entry>
       <PointerOffset/>
@@ -264,7 +269,7 @@ maybe get to some light warm-ups now?</EnglishText>
       <Notes/>
       <SpeakerId>21</SpeakerId>
       <Id>22</Id>
-      <Status>Editing</Status>
+      <Status>Proofreading</Status>
     </Entry>
     <Entry>
       <PointerOffset/>
@@ -274,7 +279,7 @@ different from our usual battles.</EnglishText>
       <Notes/>
       <SpeakerId>20</SpeakerId>
       <Id>23</Id>
-      <Status>Editing</Status>
+      <Status>Proofreading</Status>
     </Entry>
     <Entry>
       <PointerOffset/>
@@ -283,18 +288,19 @@ different from our usual battles.</EnglishText>
       <Notes/>
       <SpeakerId>21</SpeakerId>
       <Id>24</Id>
-      <Status>Editing</Status>
+      <Status>Proofreading</Status>
     </Entry>
     <Entry>
       <PointerOffset/>
       <JapaneseText>それは…うん、そうだね。
 なんだかスッキリしたし、本番が楽しみ、かな</JapaneseText>
-      <EnglishText>It was... Yeah, you're right. I feel refreshed,
-and I'm looking forward to the real matches.</EnglishText>
+      <EnglishText>It was... Yeah, you're right. I feel
+refreshed, and I'm looking forward
+to the real battles.</EnglishText>
       <Notes/>
       <SpeakerId>20</SpeakerId>
       <Id>25</Id>
-      <Status>Editing</Status>
+      <Status>Proofreading</Status>
     </Entry>
     <Entry>
       <PointerOffset/>
@@ -305,7 +311,7 @@ Hyahahahehe!</EnglishText>
       <Notes/>
       <SpeakerId>21</SpeakerId>
       <Id>26</Id>
-      <Status>Editing</Status>
+      <Status>Proofreading</Status>
     </Entry>
   </Strings>
   <Strings>
