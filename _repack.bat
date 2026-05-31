@@ -6,7 +6,13 @@
 ::python tools\tb_tools\scripts\bdi_repack.py
 ::copy /Y 3_patched\namco.bdi 4_builds\PSP_GAME\USRDIR\namco.bdi
 
-robocopy "2_translated\graphics" "3_patched\all" *.png /S
+
+REM Copy every graphics except PSP_GAME Folder
+robocopy "2_translated\graphics" "3_patched\all" *.png /E /XD "2_translated\graphics\PSP_GAME"
+
+REM Copy PSP_GAME Graphics folder to 4_builds
+robocopy "2_translated\graphics\PSP_GAME" "4_builds\PSP_GAME" *.PNG /E
+
 "tools/asm/armips.exe" "tools/asm/EbootText.asm"
 python tools\tb_tools\scripts\mlb_repack.py
 python tools\codebase\ScriptRepack.py

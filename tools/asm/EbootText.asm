@@ -1,6 +1,14 @@
 .open "1_extracted/EBOOT.BIN","4_builds\PSP_GAME\SYSDIR\EBOOT.BIN",0x00
 .psp
 
+//Title Name
+.orga 0x250ED8
+.asciiz "Tales of the Heroes: Twin Brave"
+
+.orga 0x250FA0
+.asciiz "New Save File"
+
+
 //Result Screen Names?
 .orga 0x230600
 .asciiz "None"
