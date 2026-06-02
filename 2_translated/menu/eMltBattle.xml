@@ -12,7 +12,7 @@
     <Entry>
       <PointerOffset>126</PointerOffset>
       <JapaneseText>制限時間内に最高hitsを叩きだせ</JapaneseText>
-      <EnglishText>Score the most hits within the time limit</EnglishText>
+      <EnglishText>Score the most hits within the time limit.</EnglishText>
       <Notes/>
       <Id>2</Id>
       <Status>Editing</Status>
@@ -20,7 +20,7 @@
     <Entry>
       <PointerOffset>158</PointerOffset>
       <JapaneseText>制限時間内に最高K.O.を叩きだせ</JapaneseText>
-      <EnglishText>Score the most K.O.s within the time limit</EnglishText>
+      <EnglishText>Score the most K.O.s within the time limit.</EnglishText>
       <Notes/>
       <Id>3</Id>
       <Status>Editing</Status>
@@ -28,7 +28,7 @@
     <Entry>
       <PointerOffset>190</PointerOffset>
       <JapaneseText>最短時間で目標エネミーを撃破せよ</JapaneseText>
-      <EnglishText>Defeat the target enemy in the shortest time possible</EnglishText>
+      <EnglishText>Defeat the target enemy in the shortest time possible.</EnglishText>
       <Notes/>
       <Id>4</Id>
       <Status>Editing</Status>
@@ -36,7 +36,7 @@
     <Entry>
       <PointerOffset>224</PointerOffset>
       <JapaneseText>最短時間でエネミーを全滅せよ</JapaneseText>
-      <EnglishText>Defeat all enemies in the shortest time possible</EnglishText>
+      <EnglishText>Defeat all enemies in the shortest time possible.</EnglishText>
       <Notes/>
       <Id>5</Id>
       <Status>Editing</Status>
@@ -172,7 +172,7 @@
     <Entry>
       <PointerOffset>501</PointerOffset>
       <JapaneseText>今回のプレイ内容は失われます</JapaneseText>
-      <EnglishText>Your progress in this session will be lost</EnglishText>
+      <EnglishText>Your progress in this session will be lost.</EnglishText>
       <Notes/>
       <Id>22</Id>
       <Status>Editing</Status>
@@ -188,7 +188,7 @@
     <Entry>
       <PointerOffset>501</PointerOffset>
       <JapaneseText>今回のプレイ内容は失われます</JapaneseText>
-      <EnglishText>Your progress in this session will be lost</EnglishText>
+      <EnglishText>Your progress in this session will be lost.</EnglishText>
       <Notes/>
       <Id>24</Id>
       <Status>Editing</Status>
@@ -204,7 +204,7 @@
     <Entry>
       <PointerOffset>501</PointerOffset>
       <JapaneseText>今回のプレイ内容は失われます</JapaneseText>
-      <EnglishText>Your progress in this session will be lost</EnglishText>
+      <EnglishText>Your progress in this session will be lost.</EnglishText>
       <Notes/>
       <Id>26</Id>
       <Status>Editing</Status>
@@ -220,7 +220,7 @@
     <Entry>
       <PointerOffset>501</PointerOffset>
       <JapaneseText>今回のプレイ内容は失われます</JapaneseText>
-      <EnglishText>Your progress in this session will be lost</EnglishText>
+      <EnglishText>Your progress in this session will be lost.</EnglishText>
       <Notes/>
       <Id>28</Id>
       <Status>Editing</Status>
