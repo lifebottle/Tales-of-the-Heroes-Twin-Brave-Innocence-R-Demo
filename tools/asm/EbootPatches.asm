@@ -6,4 +6,4 @@ li a1, 0x50
 
 // Text speed: default frames-per-char 0x2 -> 0x1 (faster)
 .org 0x08920cc4
-li v0, 0x2
+li v0, 0x1
