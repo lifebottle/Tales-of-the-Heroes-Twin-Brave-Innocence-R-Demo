@@ -1,0 +1,5 @@
+.headersize 0x8803000
+
+// Change margin from 0x64 to 0x50
+.org 0x08920580
+li a1, 0x50
