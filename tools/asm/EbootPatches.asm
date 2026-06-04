@@ -3,3 +3,7 @@
 // Change margin from 0x64 to 0x50
 .org 0x08920580
 li a1, 0x50
+
+// Text speed: default frames-per-char 0x2 -> 0x1 (faster)
+.org 0x08920cc4
+li v0, 0x2
