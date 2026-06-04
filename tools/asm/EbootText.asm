@@ -1,4 +1,4 @@
-.open "1_extracted/EBOOT.BIN","4_builds\PSP_GAME\SYSDIR\EBOOT.BIN",0x00
+.open "1_extracted/EBOOT.BIN","4_builds/PSP_GAME/SYSDIR/EBOOT.BIN",0x00
 .psp
 
 //Title Name
@@ -94,5 +94,7 @@
 
 .orga 0x242108
 .asciiz "Ruca's tussle with others from Tales."
+
+.include "tools/asm/EbootPatches.asm"
 
 .close
