@@ -1,6 +1,5 @@
 # Ignore project folders
-0_disc
-1_extracted
+
 
 # Ignore any stray .iso files
 *.iso
