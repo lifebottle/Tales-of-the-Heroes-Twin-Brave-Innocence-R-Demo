@@ -19,7 +19,7 @@
       <Notes>Audio file: na/NA04_300_024.na</Notes>
       <SpeakerId>0</SpeakerId>
       <Id>0</Id>
-      <Status>Editing</Status>
+      <Status>Proofreading</Status>
     </Entry>
     <Entry>
       <PointerOffset/>
@@ -28,7 +28,7 @@
       <Notes>Audio file: na/NA04_301_024.na</Notes>
       <SpeakerId>0</SpeakerId>
       <Id>1</Id>
-      <Status>Editing</Status>
+      <Status>Proofreading</Status>
     </Entry>
     <Entry>
       <PointerOffset/>
@@ -37,7 +37,7 @@
       <Notes>Audio file: na/NA04_302_024.na</Notes>
       <SpeakerId>0</SpeakerId>
       <Id>2</Id>
-      <Status>Editing</Status>
+      <Status>Proofreading</Status>
     </Entry>
     <Entry>
       <PointerOffset/>
@@ -46,7 +46,7 @@
       <Notes>Audio file: na/NA04_303_024.na</Notes>
       <SpeakerId>0</SpeakerId>
       <Id>3</Id>
-      <Status>Editing</Status>
+      <Status>Proofreading</Status>
     </Entry>
     <Entry>
       <PointerOffset/>
@@ -55,7 +55,7 @@
       <Notes>Audio file: na/NA04_304_024.na</Notes>
       <SpeakerId>0</SpeakerId>
       <Id>4</Id>
-      <Status>Editing</Status>
+      <Status>Proofreading</Status>
     </Entry>
     <Entry>
       <PointerOffset/>
@@ -64,7 +64,7 @@
       <Notes>Audio file: na/NA04_305_024.na</Notes>
       <SpeakerId>0</SpeakerId>
       <Id>5</Id>
-      <Status>Editing</Status>
+      <Status>Proofreading</Status>
     </Entry>
     <Entry>
       <PointerOffset/>
@@ -73,7 +73,7 @@
       <Notes>Audio file: na/NA04_306_024.na</Notes>
       <SpeakerId>0</SpeakerId>
       <Id>6</Id>
-      <Status>Editing</Status>
+      <Status>Proofreading</Status>
     </Entry>
     <Entry>
       <PointerOffset/>
@@ -82,7 +82,7 @@
       <Notes>Audio file: na/NA04_307_024.na</Notes>
       <SpeakerId>0</SpeakerId>
       <Id>7</Id>
-      <Status>Editing</Status>
+      <Status>Proofreading</Status>
     </Entry>
     <Entry>
       <PointerOffset/>
@@ -91,7 +91,7 @@
       <Notes>Audio file: na/NA04_308_024.na</Notes>
       <SpeakerId>0</SpeakerId>
       <Id>8</Id>
-      <Status>Editing</Status>
+      <Status>Proofreading</Status>
     </Entry>
     <Entry>
       <PointerOffset/>
@@ -100,7 +100,7 @@
       <Notes>Audio file: na/NA04_309_024.na</Notes>
       <SpeakerId>0</SpeakerId>
       <Id>9</Id>
-      <Status>Editing</Status>
+      <Status>Proofreading</Status>
     </Entry>
     <Entry>
       <PointerOffset/>
@@ -109,7 +109,7 @@
       <Notes>Audio file: na/NA04_310_024.na</Notes>
       <SpeakerId>0</SpeakerId>
       <Id>10</Id>
-      <Status>Editing</Status>
+      <Status>Proofreading</Status>
     </Entry>
     <Entry>
       <PointerOffset/>
@@ -118,7 +118,7 @@
       <Notes>Audio file: na/NA04_311_024.na</Notes>
       <SpeakerId>0</SpeakerId>
       <Id>11</Id>
-      <Status>Editing</Status>
+      <Status>Proofreading</Status>
     </Entry>
     <Entry>
       <PointerOffset/>
@@ -127,7 +127,7 @@
       <Notes>Audio file: na/NA04_312_024.na</Notes>
       <SpeakerId>0</SpeakerId>
       <Id>12</Id>
-      <Status>Editing</Status>
+      <Status>Proofreading</Status>
     </Entry>
   </Strings>
 </SceneText>
