@@ -97,7 +97,8 @@
     <Entry>
       <PointerOffset/>
       <JapaneseText>そっちこそ！　怪我しても恨まないでよね、チンピラさん</JapaneseText>
-      <EnglishText>Right back at you! Don't hold a grudge against me if you get hurt, mister delinquent.</EnglishText>
+      <EnglishText>Right back at you! Don't hold a grudge
+against me if you get hurt, mister delinquent.</EnglishText>
       <Notes>Iスパーダ編／ステージ開始
  | マルタ・会話１：２
  | Audio file: na/NA03_S101_C0020_022.na</Notes>
@@ -152,7 +153,8 @@
     <Entry>
       <PointerOffset/>
       <JapaneseText>血気盛んな街の若者達が、祭り気分で乱入！</JapaneseText>
-      <EnglishText>The hot-blooded young folks from the town burst in with their festive spirit!</EnglishText>
+      <EnglishText>The hot-blooded young folks from
+the town burst in with their festive spirit!</EnglishText>
       <Notes>ステージ開始
  | 天の声・天の声：１</Notes>
       <SpeakerId>5</SpeakerId>
@@ -162,7 +164,8 @@
     <Entry>
       <PointerOffset/>
       <JapaneseText>若者のケンカ祭を突破し、マルタ達とのケンカに勝利せよ！</JapaneseText>
-      <EnglishText>Break through the young folks' fight festival and win the fight against Marta and Emil!</EnglishText>
+      <EnglishText>Break through the young folks' fight festival
+and win the fight against Marta and Emil!</EnglishText>
       <Notes>ステージ開始
  | 天の声・天の声：２</Notes>
       <SpeakerId>5</SpeakerId>
@@ -172,7 +175,8 @@
     <Entry>
       <PointerOffset/>
       <JapaneseText>ウゼェな！　弱ェくせにカラんでくんじゃねェよ！</JapaneseText>
-      <EnglishText>Goddamn annoyin'! Don't pick a fight with me if you're that damn weak!</EnglishText>
+      <EnglishText>Goddamn annoyin'! Don't pick a fight
+with me if you're that damn weak!</EnglishText>
       <Notes>Iスパーダ編／ステージ途中１
  | スパーダ・会話２：１
  | Audio file: na/NA03_S101_D0010_020.na</Notes>
@@ -259,7 +263,8 @@
     <Entry>
       <PointerOffset/>
       <JapaneseText>てめぇには関係ねぇだろ！　黙って俺にやられてろ！</JapaneseText>
-      <EnglishText>This has nothin' to do with you! Shut your trap and let me knock you out already!</EnglishText>
+      <EnglishText>This has nothin' to do with you!
+Shut your trap and let me knock you out already!</EnglishText>
       <Notes>Iスパーダ編／ステージ途中２
  | エミルＲ・会話３：３
  | Audio file: na/NA03_S101_E0030_036.na</Notes>
@@ -281,7 +286,8 @@
     <Entry>
       <PointerOffset/>
       <JapaneseText>こっちの方が話が早くてオレは好きだぜ！</JapaneseText>
-      <EnglishText>I like it more that way, 'cause it gets this whole thing wrapped up faster!</EnglishText>
+      <EnglishText>I like it more that way, 'cause it gets
+this whole thing wrapped up faster!</EnglishText>
       <Notes>Iスパーダ編／ステージ途中２
  | スパーダ・会話３：５
  | Audio file: na/NA03_S101_E0050_020.na</Notes>
@@ -302,7 +308,8 @@
     <Entry>
       <PointerOffset/>
       <JapaneseText>キミ、このチンピラに無理やり戦わされてるんでしょ？</JapaneseText>
-      <EnglishText>You're being forced to fight with this delinquent against your will, aren't you?</EnglishText>
+      <EnglishText>You're being forced to fight with this
+delinquent against your will, aren't you?</EnglishText>
       <Notes>Iスパーダ編／ボス戦　ＶＳエミル・マルタ
  | マルタ・会話４：１
  | Audio file: na/NA03_S101_F0010_022.na</Notes>
@@ -379,7 +386,8 @@
     <Entry>
       <PointerOffset/>
       <JapaneseText>世界樹に向かう？　無理だな、お前らみたいな雑魚じゃ</JapaneseText>
-      <EnglishText>Going to the World Tree? No way, guys like you are too weak for that.</EnglishText>
+      <EnglishText>Going to the World Tree? No way,
+guys like you are too weak for that.</EnglishText>
       <Notes>Iスパーダ編／ボス戦途中
  | エミルＲ・会話５：４
  | Audio file: na/NA03_S101_G0040_036.na</Notes>
@@ -412,7 +420,8 @@
     <Entry>
       <PointerOffset/>
       <JapaneseText>てめぇらもう容赦しねぇ！　叩きつぶしてやる！</JapaneseText>
-      <EnglishText>I ain't showin' you any more mercy! I'm gonna wipe the floor with you!</EnglishText>
+      <EnglishText>I ain't showin' you any more mercy!
+I'm gonna wipe the floor with you!</EnglishText>
       <Notes>Iスパーダ編／ボス戦　先にマルタ撃破
  | エミルＲ・会話７：２
  | Audio file: na/NA03_S101_I0020_036.na</Notes>
@@ -445,7 +454,8 @@
     <Entry>
       <PointerOffset/>
       <JapaneseText>スパーダ……チンピラを否定出来る言葉遣いじゃないってば</JapaneseText>
-      <EnglishText>Spada... that's not how you should be talking if you wanna refute her delinquent claims.</EnglishText>
+      <EnglishText>Spada... that's not how you should be talking
+if you wanna refute her delinquent claims.</EnglishText>
       <Notes>Iスパーダ編／ボス戦勝利
  | ルカ・会話８：３
  | Audio file: na/NA03_S101_J0030_019.na</Notes>
