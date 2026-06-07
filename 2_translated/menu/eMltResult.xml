@@ -12,8 +12,7 @@
     <Entry>
       <PointerOffset>118</PointerOffset>
       <JapaneseText>絆レベル:%03d</JapaneseText>
-      <EnglishText>
-BOND: %03d</EnglishText>
+      <EnglishText>BOND: %03d</EnglishText>
       <Notes/>
       <Id>2</Id>
       <Status>Editing</Status>
@@ -179,7 +178,7 @@ time has been reduced.</EnglishText>
     <Entry>
       <PointerOffset>548</PointerOffset>
       <JapaneseText>設定できるようになりました</JapaneseText>
-      <EnglishText>and artes to your partner</EnglishText>
+      <EnglishText>and artes to your partner.</EnglishText>
       <Notes/>
       <Id>22</Id>
       <Status>Editing</Status>

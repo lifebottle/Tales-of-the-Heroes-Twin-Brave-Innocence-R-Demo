@@ -252,10 +252,10 @@
     <Entry>
       <PointerOffset>1774</PointerOffset>
       <JapaneseText>連携秘奥義を修得済みなら、秘奥義発動中に△ボタンを押そう！</JapaneseText>
-      <EnglishText/>
+      <EnglishText>If you've mastered a linked Mystic Arte, press △ while the Mystic Arte is in effect!</EnglishText>
       <Notes/>
       <Id>32</Id>
-      <Status>Problematic</Status>
+      <Status>Editing</Status>
     </Entry>
     <Entry>
       <PointerOffset>1834</PointerOffset>
@@ -263,7 +263,7 @@
       <EnglishText>Your partner will unleash their Mystic Arte right after yours!</EnglishText>
       <Notes/>
       <Id>33</Id>
-      <Status>Problematic</Status>
+      <Status>Editing</Status>
     </Entry>
     <Entry>
       <PointerOffset>1890</PointerOffset>
