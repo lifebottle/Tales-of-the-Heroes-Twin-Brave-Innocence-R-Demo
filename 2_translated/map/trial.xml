@@ -228,7 +228,8 @@
     <Entry>
       <PointerOffset/>
       <JapaneseText>血の気の多い連中だが、せっかくだ、相手してやるか？</JapaneseText>
-      <EnglishText>They're pretty hotheaded guys, but since we're already here, you wanna do this?</EnglishText>
+      <EnglishText>They're pretty hotheaded guys, but since
+we're already here, you wanna do this?</EnglishText>
       <Notes>ＴＯＩＲ体験版／ステージ途中３
  | ユーリ・会話４：３
  | Audio file: na/NA03_S161_F0030_023.na</Notes>
@@ -250,7 +251,8 @@
     <Entry>
       <PointerOffset/>
       <JapaneseText>ようやくおでましかよ、もったいつけやがって</JapaneseText>
-      <EnglishText>So you've finally come out, after leavin' us hangin' this whole time.</EnglishText>
+      <EnglishText>So you've finally come out,
+after leavin' us hangin' this whole time.</EnglishText>
       <Notes>ＴＯＩＲ体験版／ボス戦　VSユーリ・フレン
  | スパーダ・会話５：１
  | Audio file: na/NA03_S161_G0010_020.na</Notes>
@@ -294,7 +296,8 @@
     <Entry>
       <PointerOffset/>
       <JapaneseText>二人で力をあわせて戦い抜いてきたんだね</JapaneseText>
-      <EnglishText>The two of you combined your strength and fought all the way to here, huh.</EnglishText>
+      <EnglishText>The two of you combined your strength
+and fought all the way to here, huh.</EnglishText>
       <Notes>ＴＯＩＲ体験版／ボス戦　VSユーリ・フレン
  | フレン・会話５：５
  | Audio file: na/NA03_S161_G0050_024.na</Notes>
@@ -305,7 +308,8 @@
     <Entry>
       <PointerOffset/>
       <JapaneseText>いいだろう、僕達と君達、正々堂々と勝負しよう！</JapaneseText>
-      <EnglishText>Very well. You two and us two will have a match, fair and square!</EnglishText>
+      <EnglishText>Very well. You two and us two will
+have a match, fair and square!</EnglishText>
       <Notes>ＴＯＩＲ体験版／ボス戦　VSユーリ・フレン
  | フレン・会話５：６
  | Audio file: na/NA03_S161_G0060_024.na</Notes>
@@ -327,7 +331,7 @@
     <Entry>
       <PointerOffset/>
       <JapaneseText>ああ、こうして君と共に戦えることになろうとはね！</JapaneseText>
-      <EnglishText>Yeah. I get to fight alongside you like this!</EnglishText>
+      <EnglishText>Yeah! I get to fight alongside you like this!</EnglishText>
       <Notes>ＴＯＩＲ体験版／ボス戦途中
  | フレン・会話６：２
  | Audio file: na/NA03_S161_H0020_024.na</Notes>

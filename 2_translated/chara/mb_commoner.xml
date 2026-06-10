@@ -159,7 +159,8 @@
     <Entry>
       <PointerOffset/>
       <JapaneseText>敵はハンパじゃねぇ！　皆も気合入れろ！</JapaneseText>
-      <EnglishText>This enemy's no fool! Time for everyone to give it their all!</EnglishText>
+      <EnglishText>This enemy's no fool!
+Time for everyone to give it their all!</EnglishText>
       <Notes>Audio file: na/NA04_416_302.na</Notes>
       <SpeakerId>0</SpeakerId>
       <Id>16</Id>
