@@ -15,7 +15,7 @@ import sys
 import re
 import struct
 
-DEF_FPS = 30.0
+DEF_FPS = 60.0      # EBOOT clock is the display vcount (~60 Hz)
 DEF_H = 15          # approx on-screen line height at the current 0.75x font
 
 
