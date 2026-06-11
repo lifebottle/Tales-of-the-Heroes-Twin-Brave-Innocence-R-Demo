@@ -170,17 +170,34 @@ nop
 j   mv_sub_draw
 nop
 
+// Hook C - free buffers when the movie function returns
+.org 0x0898BB64
+j   mv_free
+
 // ---- code cave (unreferenced zero pad @ 0x08A29BF5+, ~600 bytes) ----
 .org 0x08A29C00
 mv_frame_ctr:
     .word 0
 mv_sub_buf:
     .word 0                     // loaded .sub buffer (0 = not loaded yet)
+mv_cache_buf:
+    .word 0                     // render cache: full-screen RGBA, text on transparent
+mv_cache_sig:
+    .word 0xFFFFFFFF            // signature of last-rendered active-cue set
+mv_vc_start:
+    .word 0xFFFFFFFF            // display vcount latched at movie start (-1 = not yet)
+mv_list_buf:
+    .word 0                     // compact painted-pixel list {u32 fbOffset, u32 color}
+mv_list_cnt:
+    .word 0                     // number of pixels in the list
 mv_reset:
     addiu sp, sp, -0x180        // replay original prologue
     sw    s7, 0x16c(sp)         // replay
-    la    t0, mv_frame_ctr
-    sw    zero, 0x0(t0)         // frame counter = 0
+    li    t1, -1
+    la    t0, mv_vc_start
+    sw    t1, 0x0(t0)           // re-latch vcount for this movie
+    la    t0, mv_cache_sig
+    sw    t1, 0x0(t0)           // invalidate render cache
     j     0x0898B770
     nop
 mv_sub_draw:
@@ -204,8 +221,17 @@ mv_sub_draw:
     la    t9, mv_sub_buf
     sw    s6, 0x0(t9)           
     sw    zero, 0x0(s6)         
+    lui   a0, 0x8
+    jal   0x08804534           // malloc render cache (0x88000 = 512*272*4)
+    ori   a0, a0, 0x8000       // [ds] a0 = 0x88000
+    la    t9, mv_cache_buf
+    sw    v0, 0x0(t9)
+    jal   0x08804534           // malloc pixel list (0x20000 = 16384 * 8B)
+    lui   a0, 0x2              // [ds] a0 = 0x20000
+    la    t9, mv_list_buf
+    sw    v0, 0x0(t9)
     la    a0, mv_sub_path
-    li    a1, 0x1              
+    li    a1, 0x1
     jal   0x08a0b654           
     li    a2, 0x1ff
     bltz  v0, mv_after_load     
@@ -218,25 +244,84 @@ mv_sub_draw:
     jal   0x08a0b61c           
     nop
 mv_after_load:
-    la    t9, mv_frame_ctr
+    // timing: elapsed display vcount (immune to dropped/stalled frames)
+    jal   0x08a0b9ac           // display vcount -> v0
+    nop
+    la    t9, mv_vc_start
     lw    t8, 0x0(t9)
-    addiu t8, t8, 0x1
-    sw    t8, 0x0(t9)           // current frame
+    li    t7, -1
+    bne   t8, t7, mv_vc_have
+    nop
+    sw    v0, 0x0(t9)           // first present: latch start vcount
+    move  t8, v0
+mv_vc_have:
+    subu  t8, v0, t8           // elapsed vcount = our time base
+    sw    t8, 0x18(sp)          // frame (kept across the render)
     la    t9, mv_sub_buf
     lw    s6, 0x0(t9)
     beq   s6, zero, mv_none
     nop
+    la    t9, mv_cache_buf
+    lw    v0, 0x0(t9)
+    beq   v0, zero, mv_none      // no cache buffer -> nothing to do
+    nop
+    la    t9, mv_list_buf
+    lw    v0, 0x0(t9)
+    beq   v0, zero, mv_none      // no pixel list -> nothing to do
+    nop
+    // signature of the active-cue set (cheap scan, no rendering)
+    lw    t0, 0x0(s6)           // cue count
+    addiu t1, s6, 0x4
+    li    t6, 0
+mv_sig:
+    blez  t0, mv_sig_done
+    nop
+    lw    t2, 0x0(t1)           // start
+    lw    t3, 0x4(t1)           // end
+    sltu  v0, t8, t2
+    bne   v0, zero, mv_sig_n
+    nop
+    sltu  v0, t8, t3
+    beq   v0, zero, mv_sig_n
+    nop
+    lw    v0, 0xc(t1)           // active -> fold textOff+start into sig
+    addu  t6, t6, v0
+    addu  t6, t6, t2
+mv_sig_n:
+    addiu t1, t1, 0x14
+    addiu t0, t0, -0x1
+    j     mv_sig
+    nop
+mv_sig_done:
+    beq   t6, zero, mv_none      // no active cues -> skip the compositor entirely
+    nop
+    la    t9, mv_cache_sig
+    lw    v0, 0x0(t9)
+    beq   t6, v0, mv_replay      // active set unchanged -> just replay the pixel list
+    nop
+    sw    t6, 0x0(t9)
+    // clear the cache layer to transparent
+    la    t9, mv_cache_buf
+    lw    t0, 0x0(t9)
+    lui   t1, 0x8
+    ori   t1, t1, 0x8000        // 0x88000 bytes
+    addu  t1, t0, t1
+mv_clr:
+    sw    zero, 0x0(t0)
+    addiu t0, t0, 0x4
+    bne   t0, t1, mv_clr
+    nop
+    // render every active cue INTO the cache (once per change)
     lw    t0, 0x0(s6)           // cue count
     addiu t1, s6, 0x4          // first cue entry
     sw    t0, 0x1c(sp)          // cues remaining
-    sw    t1, 0x18(sp)          // current cue entry ptr
+    sw    t1, 0x20(sp)          // current cue entry ptr
 mv_cue_loop:
     lw    t0, 0x1c(sp)
-    blez  t0, mv_none
+    blez  t0, mv_buildlist
     nop
-    lw    t1, 0x18(sp)
-    la    t9, mv_frame_ctr
-    lw    t8, 0x0(t9)           // frame
+    lw    t1, 0x20(sp)
+    lw    t8, 0x18(sp)          // frame
     lw    t2, 0x0(t1)           // start
     lw    t3, 0x4(t1)           // end
     sltu  v0, t8, t2            // frame
@@ -328,13 +413,12 @@ mv_r_glyph:
     addiu a0, sp, 0x10
     jal   0x08985264          // rasterize glyph -> temp buf
     move  a1, zero
-    lw    t0, -0x83c(s0)
-    lui   t1, 0x4000
-    or    t0, t0, t1          // uncached
+    la    t9, mv_cache_buf
+    lw    t0, 0x0(t9)          // render into the cache (cached RAM)
     sll   t1, s7, 0xb         // penY*2048
     addu  t0, t0, t1
     sll   t1, s3, 2          // penX*4
-    addu  s6, t0, t1          // s6 = base dst
+    addu  s6, t0, t1          // s6 = base dst (cache)
     addiu a0, s6, -2052       // (-1,-1)
     jal   mv_blit
     li    a1, 0
@@ -377,9 +461,9 @@ mv_line_break:
     j     mv_line              
     nop
 mv_cue_next:
-    lw    t1, 0x18(sp)
+    lw    t1, 0x20(sp)
     addiu t1, t1, 0x14         
-    sw    t1, 0x18(sp)
+    sw    t1, 0x20(sp)
     lw    t0, 0x1c(sp)
     addiu t0, t0, -0x1         
     sw    t0, 0x1c(sp)
@@ -397,8 +481,11 @@ mv_none:
     lw    a0, -0x83c(s0)       
     j     0x0899AFD8
     nop
+
+// ---- second code cave (zero pad @ 0x08A2A215, 1207 bytes) ----
+.org 0x08A2A218
 mv_blit:
-    lw    t1, -0x1bbc(s0)     
+    lw    t1, -0x1bbc(s0)
     la    t2, mv_dn_map       
     li    t4, 0               
 mv_b_row:
@@ -471,6 +558,99 @@ mv_b_skip:
     bne   v0, zero, mv_b_row
     nop
     jr    ra
+    nop
+
+// Build the compact painted-pixel list from the rendered cache
+mv_buildlist:
+    la    t9, mv_cache_buf
+    lw    t1, 0x0(t9)          // cache base (cached)
+    la    t9, mv_list_buf
+    lw    t2, 0x0(t9)          // list base
+    li    t3, 0               // entry count
+    li    t4, 0               // byte offset into cache
+    lui   t5, 0x8
+    ori   t5, t5, 0x8000        // 0x88000 scan limit
+    li    t6, 0x4000           // 16384-entry cap (== malloc size / 8)
+mv_bl_loop:
+    beq   t4, t5, mv_bl_save     // whole cache scanned
+    nop
+    addu  t7, t1, t4
+    lw    v0, 0x0(t7)          // cache pixel
+    srl   v1, v0, 0x18        // alpha
+    beq   v1, zero, mv_bl_next  // transparent -> skip
+    nop
+    beq   t3, t6, mv_bl_save     // list full -> stop
+    nop
+    sll   v1, t3, 3            // entry*8
+    addu  v1, t2, v1
+    sw    t4, 0x0(v1)          // fbByteOffset (== cache byte offset)
+    sw    v0, 0x4(v1)          // color
+    addiu t3, t3, 0x1
+mv_bl_next:
+    addiu t4, t4, 0x4
+    j     mv_bl_loop
+    nop
+mv_bl_save:
+    la    t9, mv_list_cnt
+    sw    t3, 0x0(t9)
+// Replay the pixel list into this frame's framebuffer
+mv_replay:
+    la    t9, mv_list_cnt
+    lw    t0, 0x0(t9)
+    blez  t0, mv_none
+    nop
+    la    t9, mv_list_buf
+    lw    t1, 0x0(t9)
+    lw    t2, -0x83c(s0)        // framebuffer
+    lui   t3, 0x4000
+    or    t2, t2, t3          // uncached mirror
+    li    t3, 0               // i
+mv_rp_loop:
+    sll   v0, t3, 3
+    addu  v0, t1, v0
+    lw    t4, 0x0(v0)          // fbByteOffset
+    lw    t5, 0x4(v0)          // color
+    addu  t4, t2, t4
+    sw    t5, 0x0(t4)          // framebuffer[offset] = color
+    addiu t3, t3, 0x1
+    bne   t3, t0, mv_rp_loop
+    nop
+    j     mv_none
+    nop
+
+// Free our mallocd buffers when the movie function returns
+mv_free:
+    la    t9, mv_sub_buf
+    lw    a0, 0x0(t9)
+    beq   a0, zero, mv_free_2
+    nop
+    sw    zero, 0x0(t9)         // null
+    jal   0x0899fab4
+    nop
+mv_free_2:
+    la    t9, mv_cache_buf
+    lw    a0, 0x0(t9)
+    beq   a0, zero, mv_free_3
+    nop
+    sw    zero, 0x0(t9)
+    jal   0x0899fab4
+    nop
+mv_free_3:
+    la    t9, mv_list_buf
+    lw    a0, 0x0(t9)
+    beq   a0, zero, mv_free_done
+    nop
+    sw    zero, 0x0(t9)
+    jal   0x0899fab4
+    nop
+mv_free_done:
+    la    t9, mv_list_cnt
+    sw    zero, 0x0(t9)         // stale count -> nothing to replay next movie
+    // Invalidate slot 0 font so the game re-rasterizes it.
+    li    t9, 0x097edbd8         // DAT_097edbd8 = per-slot charcode table
+    sh    zero, 0x0(t9)         // slot 0 = empty -> forces a cache miss + redraw
+    lw    ra, 0x174(sp)         // replay overwritten 0x0898BB64
+    j     0x0898BB6C
     nop
 
 mv_dn_map:
