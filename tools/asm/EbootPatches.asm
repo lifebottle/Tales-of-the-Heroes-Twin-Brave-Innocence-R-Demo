@@ -99,11 +99,16 @@ tb_nl_ystore:
     nop
 
 
-// Enlarge SCENARIO message text buffer
+// Enlarge SCENARIO message text buffer.
 .org 0x0889BA9C
-li a0, 0xA0       // scenario message struct size (was 0x5C)
+li a0, 0xA0       // struct size (was 0x5C)
 .org 0x0889BAF0
-li a2, 0x7B       // text strncpy limit (was 0x3B); null-terminates
+li a2, 0x7B       // text copy limit (was 0x3B)
+// Path 2 - the one shown in battle:
+.org 0x0889BC3C
+li a0, 0xA4       // struct size (was 0x60)
+.org 0x0889BCAC
+li a2, 0x7B       // text copy limit (was 0x3B)
 
 // Grow chat box vertically when the message has '\n'
 // Hook - before box draw
@@ -157,7 +162,6 @@ tb_box_done:
     lw    v0, 0x44(a1)         // orig 0x08897C50
     j     0x08897C54
     nop
-
 
 // PMF movie subtitles load EUC-JP .sub file
 // Hook A - reset frame counter at movie start
