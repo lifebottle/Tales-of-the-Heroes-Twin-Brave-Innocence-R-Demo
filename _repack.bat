@@ -22,4 +22,6 @@ python tools\codebase\ScriptRepack.py
 ::repack the es files
 python tools\codebase\battle2_repack.py
 uv run tb-tools bdi --overlay 3_patched/all --bdi 0_disc\PSP_GAME\USRDIR\namco.bdi --output 4_builds/PSP_GAME/USRDIR/namco.bdi
+::update the PARAM.SFO title
+python tools\sfo_title.py 4_builds\PSP_GAME\PARAM.SFO "Tales of the Heroes TWIN BRAVE (Innocence R Demo Version)"
 pause
