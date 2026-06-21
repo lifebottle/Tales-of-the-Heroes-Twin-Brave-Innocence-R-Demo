@@ -227,3 +227,5 @@ __marimo__/
 tools/eboot.hexproj
 /tools/eboot
 /tools/font
+tools/folderstructurecreator.py
+tools/folder_structure.txt
