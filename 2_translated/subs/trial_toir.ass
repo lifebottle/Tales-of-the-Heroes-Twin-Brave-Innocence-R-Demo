@@ -16,8 +16,7 @@ Audio File: trial_toir.mp4
 Video File: trial_toir.mp4
 Video AR Mode: 4
 Video AR Value: 1.764706
-Active Line: 10
-Video Position: 819
+Video Position: 9
 
 [V4+ Styles]
 Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
@@ -26,14 +25,14 @@ Style: twin brave text,Arial,28,&H00FFFFFF,&H000000FF,&H00000000,&H00000000,0,0,
 
 [Events]
 Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
-Dialogue: 0,0:00:00.28,0:00:03.09,twin brave text,,0,0,170,,企画・制作
-Dialogue: 0,0:00:00.72,0:00:03.09,twin brave text,,0,0,75,,株式会社バンダイナムコゲームス
-Dialogue: 0,0:00:05.39,0:00:07.59,twin brave text,,0,0,190,,最新作!
-Dialogue: 0,0:00:05.39,0:00:07.59,twin brave text,,0,0,75,,テイルズオブアクション
-Dialogue: 0,0:00:09.43,0:00:11.43,twin brave text,,0,0,75,,二人の絆で
-Dialogue: 0,0:00:13.86,0:00:17.23,twin brave text,,0,0,185,,二人VS多数の
-Dialogue: 0,0:00:13.86,0:00:17.23,twin brave text,,0,0,55,,熱い戦いが今始まる!
-Dialogue: 0,0:00:22.31,0:00:24.54,twin brave text,,0,0,0,,戦いの果てに見るものは何か!?
-Dialogue: 1,0:00:27.01,0:00:29.98,twin brave text,,0,0,65,,交差する、絆の物語を体感せよ!
-Dialogue: 0,0:00:24.65,0:00:27.32,twin brave text,,0,0,0,,ようやく形になってきたというところか?
-Dialogue: 0,0:00:27.32,0:00:29.02,twin brave text,00,0,0,0,,次に期待してるぜ
+Dialogue: 0,0:00:00.28,0:00:03.09,twin brave text,,0,0,170,,Designed and Produced By
+Dialogue: 0,0:00:00.72,0:00:03.09,twin brave text,,0,0,75,,Bandai Namco Games
+Dialogue: 0,0:00:05.39,0:00:07.59,twin brave text,,0,0,190,,The Latest Work!
+Dialogue: 0,0:00:05.39,0:00:07.59,twin brave text,,0,0,75,,"Tales of" Musou Action.
+Dialogue: 0,0:00:09.43,0:00:11.43,twin brave text,,0,0,75,,With these bonded pairs,
+Dialogue: 0,0:00:13.86,0:00:17.23,twin brave text,,0,0,185,,An intense battle is about to begin
+Dialogue: 0,0:00:13.86,0:00:17.23,twin brave text,,0,0,55,,against countless foes!
+Dialogue: 0,0:00:22.31,0:00:24.54,twin brave text,,0,0,0,,What result will YOU see at the end?!
+Dialogue: 1,0:00:27.01,0:00:29.98,twin brave text,,0,0,65,,Experience a story of intersecting bonds!
+Dialogue: 0,0:00:24.65,0:00:27.32,twin brave text,,0,0,0,,Flynn: Wouldn't you say things are finally taking shape?
+Dialogue: 0,0:00:27.32,0:00:29.02,twin brave text,00,0,0,0,,Yuri: I'm looking forward to what's next.
