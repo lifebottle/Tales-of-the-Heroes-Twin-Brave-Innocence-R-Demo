@@ -1,5 +1,51 @@
 # Tales-of-the-Heroes-Twin-Brave Innocence R Demo
-An attempt to translate Tales of the Heroes: Twin Brave Innocence R Demo
+Full English Translation of Tales of the Heroes: Twin Brave Innocence R Demo
+
+Credits
+
+- **Project Manager**
+  - Pegi
+
+- **Lead Programmer**
+  - Ethanol
+
+- **Programmers**
+  - Yuvi
+  - Everdred
+
+- **Lead Translator**
+  - ShiShi
+
+- **Translator**
+  - Pegi (Menu and Graphics)
+
+- **Lead Editor**
+  - Dragonbleapiece
+
+- **Editors**
+  - Kevan
+  - gatordski
+
+- **Graphic Artist**
+  - Pegi
+
+- **Video Editor**
+  - WilliamTBOG
+
+- **Subtitle Editor**
+  - getterdrill
+
+- **QA Testers**
+  - ShiShi
+  - Dragonbleapiece
+  - Kevan
+  - gatordski
+  - Yuvi
+  - Ryuza
+  - getterdrill
+  - Cross
+
+# Programming Notes for Programers
 
 1.
 install newest python via the standalone installer so that you can use "pip" on step 4:
